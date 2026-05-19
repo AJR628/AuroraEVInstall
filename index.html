@@ -1088,6 +1088,93 @@
     .footer-bottom { flex-direction: column; }
   }
 
+
+  /* HERO PHOTO BANNER */
+  .hero-photo {
+    width: 100%;
+    overflow: hidden;
+    background: var(--navy);
+    position: relative;
+  }
+  .hero-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 520px;
+    object-fit: cover;
+  }
+
+  /* WHY-US WITH FEATURE IMAGE (new layout) */
+  .why-with-image {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 56px;
+    align-items: center;
+  }
+  .why-feature-image {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    box-shadow: 0 12px 32px rgba(10, 31, 61, 0.1);
+    position: sticky;
+    top: 90px;
+  }
+  .why-feature-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .why-feature-image .caption {
+    background: var(--navy);
+    color: white;
+    padding: 16px 22px;
+    font-size: 13px;
+    line-height: 1.5;
+    border-top: 1px solid var(--cyan);
+  }
+  .why-feature-image .caption strong { color: var(--cyan); font-weight: 700; }
+  .why-stack-points {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .why-stack-point {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .why-stack-point .num {
+    flex-shrink: 0;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: var(--electric-soft);
+    color: var(--electric);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .why-stack-point h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+    letter-spacing: -0.005em;
+  }
+  .why-stack-point p {
+    font-size: 14.5px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+  .why-stack-point p strong { color: var(--navy); }
+  @media (max-width: 880px) {
+    .why-with-image { grid-template-columns: 1fr; gap: 36px; }
+    .why-feature-image { position: static; }
+  }
+
   /* STICKY MOBILE QUOTE BAR */
   .sticky-mobile-bar {
     display: none;
@@ -1157,27 +1244,27 @@
       <div>
         <div class="verified-pill">
           <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          Licensed electricians · Aurora permits handled
+          Free Aurora quote · Same-day callback · No spam
         </div>
-        <h1>EV Charger Installation <span class="accent">in Aurora, CO</span></h1>
-        <p class="hero-dek">Tesla Wall Connector, Level 2, NEMA 14-50, panel upgrades — installed by licensed Aurora electricians who handle every permit, every inspection, and every rebate detail for you.</p>
+        <h1>Charge at home in Aurora. <span class="accent">We handle the rest.</span></h1>
+        <p class="hero-dek">Tell us about your garage. A licensed Aurora electrician calls within hours with a free quote, then handles the permit, the install, and the inspection. Most homes done in one day.</p>
 
         <ul class="hero-bullets">
           <li>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>Aurora City Code §22-213 permits pulled by your electrician</span>
+            <span>Free quote with same-day callback during business hours</span>
           </li>
           <li>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>Inspected to the 2023 NEC (the code Aurora actually uses)</span>
+            <span>Most installs done in a single day</span>
           </li>
           <li>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>Xcel rebate enrollment guidance &amp; federal §30C eligibility check</span>
+            <span>We pull every permit and schedule the inspection — you don't lift a finger</span>
           </li>
           <li>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>Free quote · same-day callback during business hours</span>
+            <span>Tesla, ChargePoint, Wallbox, and every major Level 2 brand</span>
           </li>
         </ul>
 
@@ -1192,7 +1279,7 @@
           </div>
           <div class="trust-item">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
-            All chargers supported
+            All major brands
           </div>
         </div>
       </div>
@@ -1252,27 +1339,35 @@
   </div>
 </section>
 
+
+<!-- HERO PHOTO BANNER -->
+<div class="hero-photo">
+  <img src="/images/hero-tesla-garage.jpg" alt="Aurora garage with Tesla Wall Connector installed and Tesla Model Y plugged in at golden hour" loading="eager">
+</div>
+
 <!-- TRUST STRIP -->
 <div class="trust-strip">
   <div class="container">
     <div class="trust-grid">
       <div class="trust-stat">
-        <div class="num">32.4%</div>
-        <div class="label">Of Colorado new car sales were EVs in Q3 2025<br>(Highest of any state, ever)</div>
+        <div class="num">Same-day</div>
+        <div class="label">Callback during<br>business hours</div>
       </div>
       <div class="trust-stat">
-        <div class="num">414K</div>
-        <div class="label">Aurora residents we serve<br>(3rd largest city in Colorado)</div>
+        <div class="num">1-day</div>
+        <div class="label">Typical install time<br>for most Aurora homes</div>
       </div>
       <div class="trust-stat">
-        <div class="num">2023 NEC</div>
-        <div class="label">Code Aurora inspects to<br>(Effective Aug 1, 2023)</div>
+        <div class="num">Free</div>
+        <div class="label">Quote &middot; no obligation,<br>no spam, no upsell</div>
       </div>
       <div class="trust-stat">
-        <div class="num">Jun 2026</div>
-        <div class="label">Federal §30C credit deadline<br>(Install before, or lose it)</div>
+        <div class="num">All brands</div>
+        <div class="label">Tesla, ChargePoint, Wallbox,<br>and every major Level 2</div>
       </div>
     </div>
+  </div>
+</div>
   </div>
 </div>
 
@@ -1302,20 +1397,20 @@
     <div class="steps-grid">
       <div class="step-card">
         <div class="step-num">Step</div>
-        <h4>Tell us about your home</h4>
-        <p>A 60-second form: your Aurora ZIP, which charger you want, your home's panel size (or "not sure"), and your garage type. Five fields, no spam. We don't share your info with anyone except your local electrician.</p>
+        <h4>Tell us about your garage</h4>
+        <p>A 60-second form. Your ZIP, which charger you want, what you know about your panel (or "not sure"). A photo of your panel speeds things up if you can snap one — but it's not required.</p>
       </div>
 
       <div class="step-card">
         <div class="step-num">Step</div>
-        <h4>Same-day ballpark + site visit</h4>
-        <p>A licensed Aurora electrician calls within business hours with a <strong>site-unseen ballpark</strong> based on your details. If the numbers make sense, they schedule a free in-home site visit to confirm the exact quote — typically within 2-3 days.</p>
+        <h4>Get a same-day callback</h4>
+        <p>A licensed Aurora electrician calls you back the same business day with a <strong>site-unseen ballpark</strong>. If the number works, they schedule a free in-home visit within 2-3 days to confirm the exact quote.</p>
       </div>
 
       <div class="step-card">
         <div class="step-num">Step</div>
-        <h4>Permit, install, inspection</h4>
-        <p>Your electrician pulls the Aurora permit under City Code §22-213, runs the dedicated 240V circuit, mounts and energizes the charger, and schedules the final electrical inspection. Most simple installs take <strong>4-6 hours on one day</strong>.</p>
+        <h4>Charge at home this week</h4>
+        <p>Your electrician handles the permit, runs the install (<strong>4-6 hours for most homes</strong>), and schedules the final inspection. You charge your EV at home — every night, for the next decade.</p>
       </div>
     </div>
   </div>
@@ -1330,7 +1425,7 @@
       </div>
       <div>
         <h4>The federal credit ends June 30, 2026</h4>
-        <p>The Section 30C home EV charger credit was <strong>shortened from 2032 to June 30, 2026</strong> by Public Law 119-21 (signed July 4, 2025). To claim 30% of cost up to $1,000 per port, your charger must be installed and operational by that date — and your home must be in an eligible census tract. <a href="https://www.irs.gov/pub/irs-prior/i8911--2025.pdf" target="_blank" rel="noopener noreferrer" style="color: var(--amber-deep); text-decoration: underline; font-weight: 600;">Source: IRS Form 8911 (2025)</a>.</p>
+        <p>There's a federal tax credit worth up to <strong>$1,000</strong> that ends <strong>June 30, 2026</strong> — about 6 weeks away. We'll help you check if your address qualifies and time your install accordingly. <a href="/rebates.html" style="color: var(--amber-deep); text-decoration: underline; font-weight: 600;">See the full rebate guide →</a></p>
       </div>
     </div>
   </div>
@@ -1459,52 +1554,51 @@
   </div>
 </section>
 
-<!-- WHY US / TRUST POINTS -->
+<!-- WHY US WITH FEATURE IMAGE -->
 <section>
   <div class="container">
     <div class="section-head">
       <div class="section-eyebrow">Why Aurora homeowners choose us</div>
-      <h2 class="section-title">Built for <span class="accent">Aurora specifically</span> — not a national directory</h2>
+      <h2 class="section-title">A licensed Aurora electrician — <span class="accent">not a lead farm</span></h2>
     </div>
 
-    <div class="trust-points-grid">
-      <div class="trust-point">
-        <div class="trust-point-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-        <div>
-          <h4>Licensed Aurora electricians only</h4>
-          <p>Every install is performed by a Colorado-licensed electrical contractor familiar with the Aurora Building Division process. <strong>City Code §22-213 requires licensed electricians</strong> to pull EV charger permits — we don't connect you with anyone who isn't.</p>
-        </div>
+    <div class="why-with-image">
+      <div class="why-feature-image">
+        <img src="/images/charger-detail.jpg" alt="Professionally installed Tesla Wall Connector with neat conduit work">
+        <div class="caption"><strong>Clean, code-compliant installs</strong> — every time, every Aurora home. Our partner electricians have done hundreds.</div>
       </div>
 
-      <div class="trust-point">
-        <div class="trust-point-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      <div class="why-stack-points">
+        <div class="why-stack-point">
+          <div class="num">1</div>
+          <div>
+            <h4>A licensed local electrician — every install</h4>
+            <p>Every quote and install goes to a <strong>Colorado-licensed local electrician</strong>, not a national lead aggregator that subs out to whoever's cheapest. You'll know who's coming to your house before they arrive.</p>
+          </div>
         </div>
-        <div>
-          <h4>Permits + inspection handled for you</h4>
-          <p>Aurora requires an electrical permit and a final inspection for every EV charger install. Your electrician pulls the permit, submits the plans, and schedules the inspection with the Aurora Building Division. <strong>You never have to call 303.739.7420 yourself.</strong></p>
-        </div>
-      </div>
 
-      <div class="trust-point">
-        <div class="trust-point-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <div class="why-stack-point">
+          <div class="num">2</div>
+          <div>
+            <h4>Permits and inspection handled for you</h4>
+            <p>We pull the Aurora permit, run the install, and schedule the final inspection. <strong>You don't make a single call to the city.</strong> You don't fill out a single form.</p>
+          </div>
         </div>
-        <div>
-          <h4>Honest about what your home needs</h4>
-          <p>If your panel is fine and you only need a Tier 1 circuit add ($500–$1,500), your electrician will tell you that. If you need a full service upgrade, they'll explain why — with a load calculation, not a sales pitch. <strong>No upselling.</strong></p>
-        </div>
-      </div>
 
-      <div class="trust-point">
-        <div class="trust-point-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        <div class="why-stack-point">
+          <div class="num">3</div>
+          <div>
+            <h4>Honest about what your home actually needs</h4>
+            <p>If your panel is fine, your electrician will say so. If you need an upgrade, they'll explain exactly why — with a load calculation, not a sales pitch. <strong>No upselling. No "while we're here."</strong></p>
+          </div>
         </div>
-        <div>
-          <h4>Rebate guidance baked in</h4>
-          <p>Your electrician will walk you through which Xcel rebate you qualify for, whether you need to enroll in Optimize Your Charge first (you do), and whether your address is in an eligible census tract for the federal §30C credit. <strong>You shouldn't have to figure that out alone.</strong></p>
+
+        <div class="why-stack-point">
+          <div class="num">4</div>
+          <div>
+            <h4>Every rebate, walked through with you</h4>
+            <p>Federal credit. Xcel rebate. Whatever you qualify for, we figure it out together. <strong>You shouldn't have to spend an afternoon decoding tax forms</strong> to get the savings you've earned.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -1637,18 +1731,18 @@
 
     <div class="faq-list">
       <details class="faq-item" open>
-        <summary>Do I really need a permit in Aurora?</summary>
-        <div class="faq-body">
-          <p>Yes. Per <strong>Aurora City Code §22-213</strong>, any electrical work — including EV charger installation — requires an electrical permit pulled by a licensed contractor before work begins. Aurora inspects all EV charger installs to the <strong>2023 National Electrical Code</strong>, which has been in effect since August 1, 2023.</p>
-          <p>Unpermitted work can void homeowner's insurance and cause issues when you sell. Source: <a href="https://aurora.municipal.codes/Code/22-213" target="_blank" rel="noopener noreferrer">Aurora Code of Ordinances §22-213</a>.</p>
-        </div>
-      </details>
-
-      <details class="faq-item">
         <summary>How much does an EV charger install cost in Aurora?</summary>
         <div class="faq-body">
           <p>Based on Qmerit's 2025 installer-network data, the <strong>Colorado average is $2,398</strong> with a typical range of $800–$3,000 before equipment. About 60% of Aurora homes only need a simple circuit addition at $500–$1,500. Equipment (Tesla Wall Connector, ChargePoint, etc.) is $300–$700 on top.</p>
           <p>See our full <a href="cost.html">Aurora EV Charger Cost Guide</a> for the four tiers, six cost variables, and worked examples after incentives.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>How long does the install take?</summary>
+        <div class="faq-body">
+          <p>For most Aurora homes (Tier 1 — simple circuit addition), the install itself takes <strong>4-6 hours on a single day</strong>. Includes permit pull, dedicated 240V circuit run, charger mounting, hardwiring or NEMA 14-50 install, and energizing. The Aurora final electrical inspection is scheduled separately, typically within a few days.</p>
+          <p>If you need a full service upgrade (Tier 4, 100A→200A), expect <strong>2-4 weeks total</strong> due to Xcel utility coordination.</p>
         </div>
       </details>
 
@@ -1669,10 +1763,10 @@
       </details>
 
       <details class="faq-item">
-        <summary>How long does the install take?</summary>
+        <summary>Do I really need a permit in Aurora?</summary>
         <div class="faq-body">
-          <p>For most Aurora homes (Tier 1 — simple circuit addition), the install itself takes <strong>4-6 hours on a single day</strong>. Includes permit pull, dedicated 240V circuit run, charger mounting, hardwiring or NEMA 14-50 install, and energizing. The Aurora final electrical inspection is scheduled separately, typically within a few days.</p>
-          <p>If you need a full service upgrade (Tier 4, 100A→200A), expect <strong>2-4 weeks total</strong> due to Xcel utility coordination.</p>
+          <p>Yes. Per <strong>Aurora City Code §22-213</strong>, any electrical work — including EV charger installation — requires an electrical permit pulled by a licensed contractor before work begins. Aurora inspects all EV charger installs to the <strong>2023 National Electrical Code</strong>, which has been in effect since August 1, 2023.</p>
+          <p>Unpermitted work can void homeowner's insurance and cause issues when you sell. Source: <a href="https://aurora.municipal.codes/Code/22-213" target="_blank" rel="noopener noreferrer">Aurora Code of Ordinances §22-213</a>.</p>
         </div>
       </details>
 
