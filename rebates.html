@@ -1,0 +1,1708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aurora EV Charger Rebates & Tax Credits — Federal §30C, Xcel, Colorado</title>
+<meta name="description" content="What Aurora homeowners actually qualify for: federal §30C credit (expires June 30 2026), Xcel Energy CO Home Wiring Rebate, and Colorado state credits. Every number sourced.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0A1F3D;
+    --navy-deep: #051528;
+    --navy-soft: #15294A;
+    --ink: #1A2238;
+    --ink-soft: #3B4259;
+    --ink-mute: #6B7787;
+    --line: #E2E8F0;
+    --line-soft: #EEF2F7;
+    --paper: #FAFBFC;
+    --paper-cool: #F4F6FA;
+    --paper-cooler: #EEF2F7;
+
+    --electric: #0066FF;
+    --electric-deep: #0052CC;
+    --electric-soft: #E6F0FF;
+    --cyan: #00B7E0;
+    --cyan-soft: #E0F6FC;
+    --green: #10B981;
+    --green-soft: #E6F7F0;
+    --green-deep: #047857;
+    --amber: #F59E0B;
+    --amber-soft: #FEF3C7;
+    --amber-deep: #B45309;
+    --red: #DC2626;
+    --red-soft: #FEE2E2;
+    --red-deep: #991B1B;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.55;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .container { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+  .container-narrow { max-width: 880px; margin: 0 auto; padding: 0 32px; }
+  @media (max-width: 720px) {
+    .container, .container-narrow { padding: 0 20px; }
+  }
+
+  /* TOP NAV */
+  header.topnav {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+    z-index: 100;
+  }
+  .nav-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 14px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--navy);
+  }
+  .brand-mark {
+    width: 32px; height: 32px;
+    background: var(--navy);
+    border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--cyan);
+    position: relative;
+  }
+  .brand-mark::before {
+    content: '';
+    position: absolute; inset: 0;
+    border-radius: 6px;
+    box-shadow: 0 0 0 1px rgba(0, 183, 224, 0.2), 0 4px 12px rgba(0, 102, 255, 0.15);
+  }
+  .brand-name {
+    font-weight: 700; font-size: 17px; letter-spacing: -0.01em;
+  }
+  .brand-name span { color: var(--electric); font-weight: 500; }
+  nav.main-nav {
+    display: flex; gap: 28px; align-items: center;
+  }
+  nav.main-nav a {
+    color: var(--ink-soft); text-decoration: none;
+    font-size: 14px; font-weight: 500;
+    transition: color 0.15s;
+  }
+  nav.main-nav a:hover { color: var(--electric); }
+  nav.main-nav a.current { color: var(--electric); font-weight: 600; }
+  .btn-primary {
+    background: var(--electric); color: white;
+    padding: 10px 20px; border-radius: 6px;
+    font-weight: 600; font-size: 14px;
+    text-decoration: none;
+    transition: all 0.2s;
+    box-shadow: 0 1px 2px rgba(10, 31, 61, 0.1), 0 0 0 1px rgba(0, 102, 255, 0.1);
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .btn-primary:hover {
+    background: var(--electric-deep);
+    box-shadow: 0 4px 12px rgba(0, 102, 255, 0.25);
+    transform: translateY(-1px);
+  }
+  @media (max-width: 880px) {
+    nav.main-nav { display: none; }
+    .nav-inner { padding: 12px 20px; }
+  }
+
+  /* HERO */
+  .hero {
+    background: var(--paper);
+    padding: 60px 0 50px;
+    border-bottom: 1px solid var(--line);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -200px; right: -200px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(245, 158, 11, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 60px;
+    align-items: start;
+    position: relative;
+    z-index: 1;
+  }
+  .breadcrumb {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-mute);
+    margin-bottom: 18px;
+    letter-spacing: 0.04em;
+  }
+  .breadcrumb a { color: var(--ink-mute); text-decoration: none; }
+  .breadcrumb a:hover { color: var(--electric); }
+  .verified-stamp {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: var(--green-soft);
+    color: var(--green-deep);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 9px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 16px;
+  }
+  .hero h1 {
+    font-size: clamp(34px, 4.8vw, 52px);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--navy);
+    margin-bottom: 20px;
+  }
+  .hero h1 .accent { color: var(--electric); }
+  .hero-dek {
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--ink-soft);
+    margin-bottom: 28px;
+  }
+
+  /* COUNTDOWN CARD */
+  .countdown-card {
+    background: linear-gradient(135deg, #FFF7E6 0%, #FFEDC9 100%);
+    border: 1px solid var(--amber);
+    border-radius: 12px;
+    padding: 24px 28px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(245, 158, 11, 0.15);
+  }
+  .countdown-card::before {
+    content: '';
+    position: absolute;
+    top: -50px; right: -50px;
+    width: 200px; height: 200px;
+    background: radial-gradient(circle, rgba(245, 158, 11, 0.2) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .countdown-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--amber-deep);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 8px;
+    position: relative; z-index: 1;
+  }
+  .countdown-display {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 10px;
+    position: relative; z-index: 1;
+  }
+  .countdown-num {
+    font-size: 56px;
+    font-weight: 800;
+    color: var(--amber-deep);
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+  .countdown-unit {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--amber-deep);
+  }
+  .countdown-context {
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+    position: relative; z-index: 1;
+  }
+  .countdown-context strong { color: var(--amber-deep); }
+
+  /* HERO QUOTE FORM */
+  .quote-card {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 28px 28px 24px;
+    box-shadow: 0 4px 24px rgba(10, 31, 61, 0.08), 0 1px 3px rgba(10, 31, 61, 0.04);
+    position: sticky;
+    top: 90px;
+  }
+  .quote-card-header { border-bottom: 1px solid var(--line); padding-bottom: 16px; margin-bottom: 18px; }
+  .quote-card h3 { font-size: 20px; font-weight: 700; color: var(--navy); letter-spacing: -0.01em; margin-bottom: 6px; }
+  .quote-card .tag { font-size: 13px; color: var(--ink-mute); }
+  .form-group { margin-bottom: 12px; }
+  .form-group label {
+    display: block; font-size: 12px; font-weight: 600;
+    color: var(--ink-soft); margin-bottom: 5px;
+    text-transform: uppercase; letter-spacing: 0.04em;
+  }
+  .form-group input, .form-group select {
+    width: 100%; padding: 11px 12px;
+    border: 1px solid var(--line); border-radius: 5px;
+    font-size: 14px; font-family: 'Inter', sans-serif;
+    color: var(--ink); background: white;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .form-group input:focus, .form-group select:focus {
+    outline: none; border-color: var(--electric);
+    box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.1);
+  }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .btn-form {
+    width: 100%; background: var(--electric); color: white;
+    padding: 14px; border: none; border-radius: 6px;
+    font-size: 15px; font-weight: 700; cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.2s;
+    box-shadow: 0 4px 14px rgba(0, 102, 255, 0.25), 0 0 0 1px rgba(0, 102, 255, 0.1);
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+  }
+  .btn-form:hover {
+    background: var(--electric-deep);
+    box-shadow: 0 6px 18px rgba(0, 102, 255, 0.35);
+    transform: translateY(-1px);
+  }
+  .form-trust { text-align: center; margin-top: 14px; font-size: 12px; color: var(--ink-mute); }
+  .form-trust strong { color: var(--navy); }
+  @media (max-width: 880px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+    .quote-card { position: static; }
+    .hero { padding: 40px 0 30px; }
+    .countdown-num { font-size: 48px; }
+  }
+
+  /* STICKY IN-PAGE NAV (the UX fix) */
+  .in-page-nav {
+    position: sticky;
+    top: 56px;
+    background: white;
+    border-bottom: 1px solid var(--line);
+    z-index: 90;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    box-shadow: 0 1px 0 rgba(10, 31, 61, 0.02);
+  }
+  .in-page-nav-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    gap: 6px;
+    padding: 10px 32px;
+    white-space: nowrap;
+  }
+  .in-page-nav a {
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--ink-soft);
+    flex-shrink: 0;
+    transition: all 0.15s;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.005em;
+  }
+  .in-page-nav a:hover {
+    background: var(--electric-soft);
+    color: var(--electric);
+  }
+  .in-page-nav a.active {
+    background: var(--electric);
+    color: white;
+  }
+  @media (max-width: 720px) {
+    .in-page-nav-inner { padding: 10px 20px; }
+    .in-page-nav { top: 49px; }
+  }
+
+  /* SECTIONS */
+  section {
+    padding: 80px 0;
+    scroll-margin-top: 112px;
+  }
+  section.tight { padding: 60px 0; }
+  section.gray { background: var(--paper-cool); }
+  .section-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--electric);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 14px;
+  }
+  .section-title {
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--navy);
+    margin-bottom: 16px;
+  }
+  .section-title .accent { color: var(--electric); }
+  .section-intro {
+    font-size: 17.5px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    max-width: 720px;
+  }
+  .section-head { margin-bottom: 40px; }
+
+  /* FEDERAL §30C SECTION */
+  .federal-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  .federal-content p {
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--ink);
+    margin-bottom: 16px;
+  }
+  .federal-content p strong { color: var(--navy); font-weight: 600; }
+  .federal-content h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 28px 0 12px;
+    letter-spacing: -0.01em;
+  }
+  .federal-content ul {
+    list-style: none; padding: 0;
+    margin: 14px 0 16px;
+  }
+  .federal-content ul li {
+    padding: 8px 0 8px 24px;
+    position: relative;
+    font-size: 15px;
+    color: var(--ink);
+  }
+  .federal-content ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--electric);
+    font-weight: 700;
+  }
+  .federal-content ul li strong { color: var(--navy); }
+
+  /* FEDERAL STAT CARD */
+  .stat-card {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 4px 16px rgba(10, 31, 61, 0.04);
+    position: sticky;
+    top: 130px;
+  }
+  .stat-card .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--ink-mute);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 16px;
+  }
+  .stat-card .big-num {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--electric);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin-bottom: 8px;
+  }
+  .stat-card .of-what {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  .stat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 12px 0;
+    border-top: 1px solid var(--line);
+    font-size: 13.5px;
+    color: var(--ink-soft);
+  }
+  .stat-row .key { font-weight: 500; }
+  .stat-row .val {
+    color: var(--navy);
+    font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12.5px;
+  }
+  @media (max-width: 880px) {
+    .federal-grid { grid-template-columns: 1fr; gap: 32px; }
+    .stat-card { position: static; }
+  }
+
+  /* CAVEAT / AMBER CALLOUT */
+  .caveat {
+    background: linear-gradient(to right, var(--amber-soft), white);
+    border: 1px solid var(--amber);
+    border-left: 4px solid var(--amber);
+    border-radius: 8px;
+    padding: 22px 26px;
+    margin: 24px 0;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+  }
+  .caveat .icon-box {
+    flex-shrink: 0;
+    width: 38px; height: 38px;
+    border-radius: 8px;
+    background: var(--amber);
+    color: white;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .caveat h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--amber-deep);
+    margin-bottom: 4px;
+    letter-spacing: -0.005em;
+  }
+  .caveat p {
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--ink);
+    margin: 0;
+  }
+  .caveat p a {
+    color: var(--amber-deep);
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
+  /* XCEL COMPARISON CARDS */
+  .xcel-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 28px;
+  }
+  .xcel-card {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 32px 28px 36px;
+    position: relative;
+    transition: all 0.2s;
+  }
+  .xcel-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(10, 31, 61, 0.08);
+  }
+  .xcel-card.enhanced {
+    border-color: var(--electric);
+    box-shadow: 0 8px 24px rgba(0, 102, 255, 0.12);
+  }
+  .xcel-card.enhanced::before {
+    content: 'INCOME-QUALIFIED';
+    position: absolute;
+    top: -10px;
+    left: 24px;
+    background: var(--electric);
+    color: white;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 10px;
+    letter-spacing: 0.08em;
+  }
+  .xcel-card .tier {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--ink-mute);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+  }
+  .xcel-card .amount {
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--electric);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin-bottom: 6px;
+  }
+  .xcel-card .amount-sub {
+    font-size: 14px;
+    color: var(--ink-mute);
+    margin-bottom: 20px;
+  }
+  .xcel-card .for-what {
+    font-size: 15px;
+    color: var(--ink);
+    line-height: 1.55;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+  }
+  .xcel-card .for-what strong { color: var(--navy); font-weight: 600; }
+  @media (max-width: 720px) {
+    .xcel-cards { grid-template-columns: 1fr; }
+  }
+
+  /* REQUIREMENT BOX */
+  .requirement-box {
+    background: var(--electric-soft);
+    border-left: 4px solid var(--electric);
+    border-radius: 8px;
+    padding: 24px 28px;
+    margin: 32px 0;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+  }
+  .requirement-box .icon-box {
+    flex-shrink: 0;
+    width: 38px; height: 38px;
+    border-radius: 8px;
+    background: var(--electric);
+    color: white;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .requirement-box h4 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--electric-deep);
+    margin-bottom: 6px;
+    letter-spacing: -0.005em;
+  }
+  .requirement-box p {
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--ink);
+    margin: 0;
+  }
+  .requirement-box p strong { color: var(--electric-deep); }
+
+  /* PROCESS STEPS */
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+  }
+  .process-step {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 24px 22px;
+  }
+  .process-step .step-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    background: var(--electric-soft);
+    color: var(--electric);
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  .process-step h5 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+    letter-spacing: -0.005em;
+  }
+  .process-step p {
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+  @media (max-width: 880px) {
+    .process-steps { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  /* STATE CONTEXT */
+  .state-box {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 40px;
+    margin-top: 16px;
+  }
+  .state-box .clarifier {
+    background: var(--red-soft);
+    border-left: 3px solid var(--red);
+    padding: 16px 18px;
+    border-radius: 6px;
+    margin-bottom: 24px;
+    display: flex;
+    gap: 12px;
+  }
+  .state-box .clarifier-icon {
+    flex-shrink: 0;
+    color: var(--red);
+  }
+  .state-box .clarifier p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--ink);
+    line-height: 1.55;
+  }
+  .state-box .clarifier strong { color: var(--red-deep); }
+  .state-list {
+    list-style: none; padding: 0;
+  }
+  .state-list li {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 15px;
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  .state-list li:last-child { border-bottom: none; }
+  .state-list li strong { color: var(--navy); display: block; margin-bottom: 2px; }
+  .state-list li .amount-pill {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    background: var(--electric-soft);
+    color: var(--electric);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-right: 8px;
+  }
+  @media (max-width: 720px) {
+    .state-box { padding: 28px 22px; }
+  }
+
+  /* STACKING DIAGRAM */
+  .stacking-flow {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    max-width: 720px;
+    margin: 32px auto 0;
+  }
+  .flow-step {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 22px 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    margin-bottom: 24px;
+  }
+  .flow-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 14px;
+    background: var(--electric);
+  }
+  .flow-step .flow-label {
+    font-size: 14px;
+    color: var(--ink-soft);
+    font-weight: 500;
+  }
+  .flow-step .flow-label strong { color: var(--navy); font-weight: 700; display: block; font-size: 16px; margin-bottom: 2px; }
+  .flow-step .flow-amount {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--navy);
+    flex-shrink: 0;
+  }
+  .flow-step.deduct { background: var(--green-soft); border-color: var(--green); }
+  .flow-step.deduct .flow-amount { color: var(--green-deep); }
+  .flow-step.deduct .flow-amount::before { content: '−'; margin-right: 2px; }
+  .flow-step.total { background: var(--navy); color: white; border-color: var(--navy); }
+  .flow-step.total .flow-label { color: rgba(255, 255, 255, 0.85); }
+  .flow-step.total .flow-label strong { color: white; }
+  .flow-step.total .flow-amount { color: var(--cyan); }
+  .stack-note {
+    background: var(--paper-cool);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-top: 28px;
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+  .stack-note strong { color: var(--navy); }
+
+  /* MID-PAGE FORM SECTION (navy) */
+  .mid-form-section {
+    background: var(--navy);
+    padding: 80px 0;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  .mid-form-section::before {
+    content: '';
+    position: absolute; top: -100px; right: -100px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(0, 183, 224, 0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .mid-form-section::after {
+    content: '';
+    position: absolute; bottom: -150px; left: -100px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(0, 102, 255, 0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .mid-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+    position: relative; z-index: 1;
+  }
+  .mid-form-left h2 {
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    color: white;
+  }
+  .mid-form-left h2 .accent { color: var(--cyan); }
+  .mid-form-left p {
+    font-size: 17px;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 24px;
+  }
+  .mid-form-bullets { list-style: none; padding: 0; }
+  .mid-form-bullets li {
+    display: flex; gap: 10px; padding: 8px 0;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+  }
+  .mid-form-bullets li svg { color: var(--cyan); flex-shrink: 0; }
+  .mid-form-card {
+    background: white;
+    border-radius: 10px;
+    padding: 32px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 183, 224, 0.2);
+    color: var(--ink);
+  }
+  .mid-form-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+    letter-spacing: -0.01em;
+  }
+  .mid-form-card .tag {
+    font-size: 13px;
+    color: var(--ink-mute);
+    margin-bottom: 22px;
+  }
+  @media (max-width: 880px) {
+    .mid-form-grid { grid-template-columns: 1fr; gap: 36px; }
+  }
+
+  /* FAQ */
+  .faq-list { margin-top: 12px; }
+  details.faq-item {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: all 0.15s;
+  }
+  details.faq-item:hover { border-color: var(--electric-soft); }
+  details.faq-item[open] {
+    border-color: var(--electric);
+    box-shadow: 0 4px 16px rgba(10, 31, 61, 0.06);
+  }
+  details.faq-item summary {
+    padding: 20px 26px;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    font-weight: 600;
+    color: var(--navy);
+    font-size: 16px;
+    letter-spacing: -0.005em;
+  }
+  details.faq-item summary::-webkit-details-marker { display: none; }
+  details.faq-item summary::after {
+    content: '+';
+    color: var(--electric);
+    font-size: 22px;
+    font-weight: 300;
+    flex-shrink: 0;
+    transition: transform 0.2s;
+  }
+  details.faq-item[open] summary::after { content: '−'; }
+  details.faq-item .faq-body {
+    padding: 0 26px 22px;
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+  }
+  details.faq-item .faq-body p { margin-bottom: 10px; }
+  details.faq-item .faq-body p:last-child { margin-bottom: 0; }
+  details.faq-item .faq-body strong { color: var(--navy); }
+  details.faq-item .faq-body a { color: var(--electric); text-decoration: none; }
+  details.faq-item .faq-body a:hover { text-decoration: underline; }
+
+  /* CLOSING CTA */
+  .closing-cta {
+    background: var(--navy);
+    color: white;
+    padding: 90px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .closing-cta::before {
+    content: '';
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px; height: 800px;
+    background: radial-gradient(circle, rgba(0, 102, 255, 0.15) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .closing-cta-inner { position: relative; z-index: 1; }
+  .closing-cta h2 {
+    font-size: clamp(32px, 4.5vw, 46px);
+    font-weight: 700;
+    color: white;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+  .closing-cta h2 .accent { color: var(--cyan); }
+  .closing-cta p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 580px;
+    margin: 0 auto 36px;
+    line-height: 1.55;
+  }
+  .btn-big {
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s;
+  }
+  .btn-big.primary {
+    background: var(--electric);
+    color: white;
+    box-shadow: 0 8px 24px rgba(0, 102, 255, 0.4), 0 0 0 1px rgba(0, 183, 224, 0.3);
+  }
+  .btn-big.primary:hover {
+    background: var(--electric-deep);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(0, 102, 255, 0.5);
+  }
+
+  /* SOURCES BLOCK */
+  .sources-block {
+    background: var(--paper-cool);
+    border-radius: 8px;
+    padding: 24px 28px;
+    margin-top: 50px;
+    border: 1px solid var(--line);
+  }
+  .sources-block h4 {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 14px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .sources-block ul {
+    list-style: none; padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 24px;
+  }
+  .sources-block li {
+    font-size: 13px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+    padding-left: 16px;
+    position: relative;
+  }
+  .sources-block li::before {
+    content: '↗';
+    position: absolute;
+    left: 0;
+    color: var(--electric);
+  }
+  .sources-block a { color: var(--electric); text-decoration: none; }
+  .sources-block a:hover { text-decoration: underline; }
+  @media (max-width: 720px) {
+    .sources-block ul { grid-template-columns: 1fr; }
+  }
+
+  /* FOOTER */
+  footer.site-footer {
+    background: var(--navy-deep);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 56px 0 32px;
+    font-size: 14px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 40px;
+  }
+  .footer-brand .brand-name { color: white; margin-bottom: 12px; }
+  .footer-brand p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+    line-height: 1.6;
+    max-width: 320px;
+  }
+  .footer-col h5 {
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .footer-col a {
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 13px;
+    padding: 4px 0;
+    transition: color 0.15s;
+  }
+  .footer-col a:hover { color: var(--cyan); }
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .footer-bottom .sources {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+  }
+  @media (max-width: 720px) {
+    .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+    .footer-bottom { flex-direction: column; }
+  }
+
+  /* STICKY MOBILE QUOTE BAR (just quote, no call) */
+  .sticky-mobile-bar {
+    display: none;
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: var(--navy);
+    padding: 12px 16px;
+    z-index: 90;
+    box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.15);
+  }
+  .sticky-mobile-bar a {
+    display: block; width: 100%; text-align: center;
+    padding: 14px; border-radius: 6px;
+    text-decoration: none; font-weight: 700; font-size: 14px;
+    background: var(--electric); color: white;
+  }
+  @media (max-width: 720px) {
+    .sticky-mobile-bar { display: block; }
+    body { padding-bottom: 76px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP NAV -->
+<header class="topnav">
+  <div class="nav-inner">
+    <a href="/" class="brand">
+      <div class="brand-mark">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      </div>
+      <div class="brand-name">Aurora EV <span>Install</span></div>
+    </a>
+    <nav class="main-nav">
+      <a href="/#services">Tesla &amp; Level 2</a>
+      <a href="/cost.html">Cost</a>
+      <a href="/#">Permits</a>
+      <a href="/rebates.html" class="current">Rebates</a>
+      <a href="/#">Panel Upgrades</a>
+      <a href="/#">Commercial</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#quote" class="btn-primary">Get Free Quote</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="breadcrumb">
+          <a href="/">Home</a> &nbsp;/&nbsp; Aurora EV Charger Rebates &amp; Credits
+        </div>
+        <div class="verified-stamp">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Last verified May 19, 2026 · Updated quarterly
+        </div>
+        <h1>Aurora EV Charger <span class="accent">Rebates &amp; Credits</span> Guide</h1>
+        <p class="hero-dek">The federal §30C credit, Xcel Energy CO Home Wiring Rebate, and Colorado state credits — every number sourced from a primary source, every program detail verified. Updated quarterly so it doesn't go stale.</p>
+
+        <div class="countdown-card">
+          <div class="countdown-label">Federal §30C credit expires in</div>
+          <div class="countdown-display">
+            <div class="countdown-num" id="countdown-num">42</div>
+            <div class="countdown-unit">days</div>
+          </div>
+          <div class="countdown-context" id="countdown-context"><strong>Deadline: June 30, 2026.</strong> Per P.L. 119-21 (One Big Beautiful Bill Act, July 4 2025), the credit terminates after that date. Charger must be installed and operational by then.</div>
+        </div>
+      </div>
+
+      <!-- HERO QUOTE FORM -->
+      <form class="quote-card" id="quote" name="lead-quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks.html">
+        <input type="hidden" name="form-name" value="lead-quote" />
+        <input type="hidden" name="source" value="rebates-hero" />
+        <p hidden style="position:absolute;left:-9999px;"><label>Do not fill this out: <input name="bot-field" /></label></p>
+        <div class="quote-card-header">
+          <h3>Free Aurora EV charger quote</h3>
+          <p class="tag">Licensed electrician. Permits handled. Rebate guidance included.</p>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First name</label>
+            <input type="text" id="fname" name="first_name" placeholder="Jordan" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="(720) 555-0142" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="zip">Aurora ZIP code</label>
+          <input type="text" id="zip" name="zip" placeholder="80016" maxlength="5" required>
+        </div>
+
+        <div class="form-group">
+          <label for="charger">Which charger?</label>
+          <select id="charger" name="charger">
+            <option>Tesla Wall Connector</option>
+            <option>ChargePoint Home Flex</option>
+            <option>Other Level 2 charger</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="xcel">Are you an Xcel customer?</label>
+          <select id="xcel" name="xcel_customer">
+            <option>Yes</option>
+            <option>No</option>
+            <option>Not sure</option>
+          </select>
+        </div>
+
+        <button class="btn-form" type="submit">
+          Get my free quote
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+        <div class="form-trust"><strong>No spam.</strong> Goes only to your local Aurora electrician.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- STICKY IN-PAGE NAV -->
+<nav class="in-page-nav" id="in-page-nav" aria-label="Page sections">
+  <div class="in-page-nav-inner">
+    <a href="#federal">Federal §30C</a>
+    <a href="#xcel">Xcel Rebate</a>
+    <a href="#state">Colorado state</a>
+    <a href="#stack">How to stack</a>
+    <a href="#faq">FAQ</a>
+  </div>
+</nav>
+
+<!-- FEDERAL §30C -->
+<section id="federal">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">The most time-sensitive</div>
+      <h2 class="section-title">Federal §30C credit — <span class="accent">expires June 30, 2026</span></h2>
+      <p class="section-intro">The Alternative Fuel Vehicle Refueling Property Credit was shortened by Public Law 119-21 (signed July 4, 2025). What was a 2032 deadline became a 2026 deadline. There's no extension on the table.</p>
+    </div>
+
+    <div class="federal-grid">
+      <div class="federal-content">
+        <p>The §30C credit gives you a federal tax credit equal to <strong>30% of the cost of installing your home EV charger</strong>, up to a maximum credit of <strong>$1,000 per charging port</strong> for residential installations. Eligible costs include the charger equipment, labor, and any associated property directly attributable to the charger (mounting hardware, wiring, panel work dedicated to the charger).</p>
+
+        <p>You claim the credit on your federal tax return for the year the property is "placed in service" — meaning installed and operational. <strong>If you wait until July 2026 to install, you've missed it.</strong></p>
+
+        <div class="caveat">
+          <div class="icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <div>
+            <h4>The census tract requirement (most miss this)</h4>
+            <p>Your home must be in either a <strong>low-income community census tract</strong> (per NMTC §45D definition) <strong>OR</strong> a <strong>non-urban census tract</strong>. Much of urban Aurora is neither. You can check your specific address via <a href="https://www.irs.gov/credits-deductions/frequently-asked-questions-regarding-eligible-census-tracts-for-purposes-of-the-alternative-fuel-vehicle-refueling-property-credit-under-section-30c" target="_blank" rel="noopener noreferrer">IRS Appendix B and the 2020 Census Tract Identifier</a>. If your GEOID isn't on that list, you don't qualify.</p>
+          </div>
+        </div>
+
+        <h3>How to actually claim it</h3>
+        <ul>
+          <li><strong>Confirm your home is in an eligible census tract</strong> using the IRS lookup above</li>
+          <li><strong>Install your charger and have it pass inspection before June 30, 2026</strong> (Aurora Building Division final electrical inspection)</li>
+          <li><strong>Keep all documentation</strong> — receipts, electrician invoices, permit records</li>
+          <li><strong>File IRS Form 8911</strong> with your tax return for the year the property was placed in service</li>
+        </ul>
+
+        <p style="font-size: 14px; color: var(--ink-mute); margin-top: 20px;"><strong>Important:</strong> this page is not tax advice. Confirm your eligibility and credit amount with a qualified CPA before filing. We summarize the rules; we don't interpret them for your situation.</p>
+      </div>
+
+      <div class="stat-card">
+        <div class="label">Federal §30C — at a glance</div>
+        <div class="big-num">30%</div>
+        <div class="of-what">of qualified install cost (after other rebates)</div>
+        <div class="stat-row">
+          <span class="key">Per-port maximum</span>
+          <span class="val">$1,000</span>
+        </div>
+        <div class="stat-row">
+          <span class="key">Termination date</span>
+          <span class="val">Jun 30, 2026</span>
+        </div>
+        <div class="stat-row">
+          <span class="key">Location requirement</span>
+          <span class="val">Eligible tract</span>
+        </div>
+        <div class="stat-row">
+          <span class="key">How to claim</span>
+          <span class="val">Form 8911</span>
+        </div>
+        <div class="stat-row">
+          <span class="key">Authority</span>
+          <span class="val">26 USC §30C</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- XCEL REBATE -->
+<section id="xcel" class="gray">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Local utility rebate</div>
+      <h2 class="section-title">Xcel Energy CO <span class="accent">EV Home Wiring Rebate</span></h2>
+      <p class="section-intro">If you're an Xcel Energy Colorado electric customer, you can stack a utility rebate on top of the federal credit. It's funded year-by-year and first-come, first-served — so verify program status before counting on it.</p>
+    </div>
+
+    <div class="xcel-cards">
+      <div class="xcel-card">
+        <div class="tier">Standard Rebate</div>
+        <div class="amount">$500</div>
+        <div class="amount-sub">for premises wiring + Level 2 charger</div>
+        <div class="for-what">Any qualifying Xcel CO residential customer. Covers the cost of a <strong>dedicated 240V circuit (50A or less)</strong> for your Level 2 charger.</div>
+      </div>
+
+      <div class="xcel-card enhanced">
+        <div class="tier">Enhanced Rebate</div>
+        <div class="amount">$1,300</div>
+        <div class="amount-sub">for income-qualified Xcel customers</div>
+        <div class="for-what">Income-qualified customers receive the enhanced flat rebate of up to <strong>$1,300</strong>. Eligibility based on <strong>household income relative to area median</strong> — your electrician can help confirm.</div>
+      </div>
+    </div>
+
+    <div class="requirement-box">
+      <div class="icon-box">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <div>
+        <h4>The requirement nobody mentions until it's too late</h4>
+        <p>You <strong>must enroll in Xcel's Optimize Your Charge program OR EV Accelerate At Home</strong> before applying for the rebate. Not after install. Not at install time. <em>Before.</em> Optimize Your Charge is free, takes 5 minutes, and gives you $50/year for letting Xcel suggest off-peak charging times.</p>
+      </div>
+    </div>
+
+    <h3 style="font-size: 22px; font-weight: 700; color: var(--navy); margin-top: 32px; margin-bottom: 8px; letter-spacing: -0.01em;">How to actually apply</h3>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-num">1</div>
+        <h5>Enroll first</h5>
+        <p>Sign up for Xcel's Optimize Your Charge program online. Free, 5 minutes.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">2</div>
+        <h5>Install your charger</h5>
+        <p>Licensed electrician installs your Level 2 charger and dedicated 240V circuit.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">3</div>
+        <h5>Submit the application</h5>
+        <p>Apply via Xcel's EV Home Wiring Rebate program with receipts and proof of licensed work.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">4</div>
+        <h5>Get your check</h5>
+        <p>Once approved, rebate check is mailed within roughly 6–8 weeks.</p>
+      </div>
+    </div>
+
+    <div class="caveat" style="margin-top: 32px;">
+      <div class="icon-box">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <div>
+        <h4>Funding is limited and first-come, first-served</h4>
+        <p>Per Xcel's published Home Wiring Rebate terms, funding is allocated annually and the program can be paused or modified at any time. <strong>Verify current program status before counting on the rebate</strong> — your electrician should check at the time of install.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COLORADO STATE -->
+<section id="state">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">For context only</div>
+      <h2 class="section-title">Colorado state credits — <span class="accent">these are for the car, not the charger</span></h2>
+      <p class="section-intro">A lot of homeowners conflate the state EV vehicle credit with charger incentives. They're different. We include this section so you don't get confused — but if you're only here for the charger install, you can skim it.</p>
+    </div>
+
+    <div class="state-box">
+      <div class="clarifier">
+        <div class="clarifier-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <p><strong>Important:</strong> these Colorado state programs apply to the <strong>EV vehicle purchase</strong>, not the charger installation. If you've already bought your EV, you've already missed (or claimed) these. They don't reduce your charger install cost.</p>
+      </div>
+
+      <ul class="state-list">
+        <li>
+          <strong><span class="amount-pill">$750</span>State EV tax credit (2026 base)</strong>
+          New EV with MSRP ≤ $80,000. <strong>Dropped from $3,500 on January 1, 2026</strong> per Colorado Energy Office. Lease must be ≥ 2 years.
+        </li>
+        <li>
+          <strong><span class="amount-pill">+$2,500</span>Adder for lower-cost EVs</strong>
+          Additional $2,500 credit for new EVs with MSRP ≤ $35,000. This portion was <em>not</em> reduced in 2026. So a sub-$35K EV gets $750 + $2,500 = $3,250 total state credit.
+        </li>
+        <li>
+          <strong><span class="amount-pill">$9,000</span>Vehicle Exchange Colorado (VXC) — new EV</strong>
+          Income-qualified Coloradans trading in a 12+ year old or emissions-failing vehicle. Effective November 3, 2025. MSRP ≤ $80,000. One per tax household.
+        </li>
+        <li>
+          <strong><span class="amount-pill">$6,000</span>Vehicle Exchange Colorado (VXC) — used EV</strong>
+          Same income qualification, used EVs with final price ≤ $50,000.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO STACK -->
+<section id="stack" class="gray">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">The math that matters</div>
+      <h2 class="section-title">How to actually stack <span class="accent">the federal credit + the Xcel rebate</span></h2>
+      <p class="section-intro">Worked example using a typical Aurora install. <strong>Order matters</strong> — the federal §30C credit is calculated on your cost <em>after</em> utility rebates reduce your basis, not on the full sticker price.</p>
+    </div>
+
+    <div class="stacking-flow">
+      <div class="flow-step">
+        <div class="flow-label">
+          <strong>Total install cost</strong>
+          $1,200 Tier 1 circuit add + $420 Tesla Wall Connector + $220 Aurora permit
+        </div>
+        <div class="flow-amount">$1,840</div>
+      </div>
+
+      <div class="flow-step deduct">
+        <div class="flow-label">
+          <strong>Xcel Home Wiring Rebate (Standard)</strong>
+          After enrolling in Optimize Your Charge
+        </div>
+        <div class="flow-amount">$500</div>
+      </div>
+
+      <div class="flow-step">
+        <div class="flow-label">
+          <strong>Your §30C cost basis</strong>
+          Cost minus utility rebate = federal-eligible amount
+        </div>
+        <div class="flow-amount">$1,340</div>
+      </div>
+
+      <div class="flow-step deduct">
+        <div class="flow-label">
+          <strong>Federal §30C credit (30%, $1,000 cap)</strong>
+          Only if your home is in an eligible census tract
+        </div>
+        <div class="flow-amount">$402</div>
+      </div>
+
+      <div class="flow-step total">
+        <div class="flow-label">
+          <strong>Net out-of-pocket</strong>
+          After both incentives
+        </div>
+        <div class="flow-amount">$938</div>
+      </div>
+    </div>
+
+    <div class="stack-note">
+      <p style="margin-bottom: 12px;"><strong>Why the order matters:</strong> the IRS treats utility rebates as a reduction in your cost basis. The §30C credit is then calculated on what you actually paid out-of-pocket — not the sticker price. If you skip the Xcel rebate, you'd get a slightly larger federal credit (30% of $1,840 = $552 instead of $402), but you'd be down $98 net overall. Always claim the utility rebate first.</p>
+      <p style="margin: 0;"><strong>If you're income-qualified for the enhanced Xcel rebate ($1,300):</strong> $1,840 − $1,300 = $540 basis → 30% × $540 = $162 federal credit → net out-of-pocket $378. That's the optimal stack for income-qualified Aurora households.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MID-PAGE QUOTE FORM (navy) -->
+<section class="mid-form-section" id="midquote">
+  <div class="container">
+    <div class="mid-form-grid">
+      <div class="mid-form-left">
+        <div class="section-eyebrow" style="color: var(--cyan);">Ready when you are</div>
+        <h2>Get an Aurora quote that <span class="accent">factors in your specific rebates</span></h2>
+        <p>A licensed Aurora electrician will walk through every rebate you qualify for — federal §30C eligibility, Xcel program enrollment, income-qualified options — and give you a quote that includes the after-incentive math, not just the sticker price.</p>
+        <ul class="mid-form-bullets">
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>We confirm your §30C census tract eligibility before quoting</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>We help you enroll in Optimize Your Charge for the Xcel rebate</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Income-qualified? We walk you through the enhanced rebate path</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Install before June 30 to claim §30C while it's still active</span>
+          </li>
+        </ul>
+      </div>
+
+      <form class="mid-form-card" name="lead-quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks.html">
+        <input type="hidden" name="form-name" value="lead-quote" />
+        <input type="hidden" name="source" value="rebates-mid" />
+        <p hidden style="position:absolute;left:-9999px;"><label>Do not fill this out: <input name="bot-field" /></label></p>
+        <h3>Tell us about your home</h3>
+        <p class="tag">Takes 60 seconds. Goes only to your local Aurora electrician.</p>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname2">First name</label>
+            <input type="text" id="fname2" name="first_name" placeholder="Jordan" required>
+          </div>
+          <div class="form-group">
+            <label for="phone2">Phone</label>
+            <input type="tel" id="phone2" name="phone" placeholder="(720) 555-0142" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="zip2">Aurora ZIP</label>
+            <input type="text" id="zip2" name="zip" placeholder="80016" required>
+          </div>
+          <div class="form-group">
+            <label for="year">Home year built</label>
+            <input type="text" id="year" name="home_year" placeholder="2015">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="charger2">Which charger?</label>
+          <select id="charger2" name="charger">
+            <option>Tesla Wall Connector</option>
+            <option>ChargePoint Home Flex</option>
+            <option>Other Level 2</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="xcel2">Are you an Xcel customer?</label>
+          <select id="xcel2" name="xcel_customer">
+            <option>Yes</option>
+            <option>No</option>
+            <option>Not sure</option>
+          </select>
+        </div>
+
+        <button class="btn-form" type="submit">
+          Get my free quote
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+        <div class="form-trust">By submitting, you'll get one callback. <strong>No drip emails, no spam.</strong></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container-narrow">
+    <div class="section-head">
+      <div class="section-eyebrow">Common questions</div>
+      <h2 class="section-title">Aurora rebate questions <span class="accent">answered honestly</span></h2>
+      <p class="section-intro">If your situation doesn't match what's covered here, your electrician will walk you through the specifics during your free quote.</p>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>What if my Aurora address isn't in an eligible census tract?</summary>
+        <div class="faq-body">
+          <p>You can't claim the federal §30C credit. But you can still claim the Xcel Home Wiring Rebate ($500 standard, up to $1,300 enhanced) without the census tract requirement — Xcel doesn't care about your tract, only that you're an Xcel CO customer enrolled in Optimize Your Charge.</p>
+          <p>Aurora addresses outside eligible tracts still get a meaningful net price reduction from the Xcel rebate alone. The federal credit is the cherry on top, not the cake.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>How do I check if my address is in an eligible §30C census tract?</summary>
+        <div class="faq-body">
+          <p>Three-step process: (1) Look up your home's 11-digit census tract GEOID using a tract-lookup tool tied to the <strong>2020 Census</strong> (for installs placed in service after January 1, 2025). (2) Open the IRS <a href="https://www.irs.gov/credits-deductions/alternative-fuel-vehicle-refueling-property-credit" target="_blank" rel="noopener noreferrer">Appendix B PDF</a> and search for your GEOID. (3) If listed, you qualify under either the low-income community or non-urban category.</p>
+          <p>If you're not sure how to find your GEOID, your electrician can help during the free quote — they do this check routinely.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can I claim both Xcel's Optimize Your Charge $50 credit AND the wiring rebate?</summary>
+        <div class="faq-body">
+          <p>Yes — and you have to. <strong>Optimize Your Charge enrollment is the gating requirement</strong> for the Home Wiring Rebate. You can't get the wiring rebate without first being enrolled in Optimize Your Charge (or EV Accelerate At Home). The $50/year participation reward is a separate ongoing benefit from being enrolled.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Will the federal §30C credit be extended past June 30, 2026?</summary>
+        <div class="faq-body">
+          <p>There's no extension on the legislative table as of May 2026. P.L. 119-21 (signed July 4, 2025) explicitly shortened the termination date from December 31, 2032 to June 30, 2026. Could a future Congress reinstate it? Theoretically, yes. Should you bet on it? No — install before June 30 if you want the credit.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>I'm income-qualified. What's the actual income threshold for Xcel's enhanced rebate?</summary>
+        <div class="faq-body">
+          <p>Xcel uses the broader Colorado income-qualified eligibility standard, which generally aligns with household income at or below 80% of the area median income (AMI) for your county. Aurora spans Arapahoe, Adams, and Douglas counties — each has its own AMI threshold. Your electrician will help confirm your eligibility based on your zip code and household size as part of the rebate application process.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>If I'm planning to buy a new EV too, do I claim the Colorado state vehicle credit separately?</summary>
+        <div class="faq-body">
+          <p>Yes — and you should. The Colorado state EV credit ($750 base + $2,500 adder for sub-$35K EVs in 2026) applies to your <strong>vehicle purchase</strong> and is independent of any charger-installation incentives. Many dealers let you assign the credit to the dealership for a point-of-sale discount. <a href="https://energyoffice.colorado.gov/transportation/grants-incentives/zero-emission-vehicle-tax-credits" target="_blank" rel="noopener noreferrer">Source: Colorado Energy Office</a>.</p>
+          <p>Important: this credit applies to the car, not the charger. We mention it here only because homeowners often confuse the two.</p>
+        </div>
+      </details>
+    </div>
+
+    <!-- SOURCES BLOCK -->
+    <div class="sources-block">
+      <h4>Sources cited on this page</h4>
+      <ul>
+        <li><a href="https://www.irs.gov/credits-deductions/alternative-fuel-vehicle-refueling-property-credit" target="_blank" rel="noopener noreferrer">IRS — §30C Alternative Fuel Vehicle Refueling Property Credit</a></li>
+        <li><a href="https://www.irs.gov/pub/irs-prior/i8911--2025.pdf" target="_blank" rel="noopener noreferrer">IRS Form 8911 (2025) Instructions — June 30, 2026 termination</a></li>
+        <li><a href="https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section30C" target="_blank" rel="noopener noreferrer">26 USC §30C — statutory text</a></li>
+        <li><a href="https://www.xcelenergy.com/staticfiles/xe-responsive/Marketing/21-07-530_CO-EV-HomeWiring_app_P03.pdf" target="_blank" rel="noopener noreferrer">Xcel Energy CO EV Home Wiring Rebate — application PDF</a></li>
+        <li><a href="https://my.xcelenergy.com/MyAccount/NCC_Agreement?idList=ka02R000000Qe91QAC" target="_blank" rel="noopener noreferrer">Xcel — Optimize Your Charge program terms</a></li>
+        <li><a href="https://energyoffice.colorado.gov/transportation/grants-incentives/zero-emission-vehicle-tax-credits" target="_blank" rel="noopener noreferrer">Colorado Energy Office — state EV tax credits</a></li>
+        <li><a href="https://energyoffice.colorado.gov/vehicle-exchange-colorado" target="_blank" rel="noopener noreferrer">Colorado Energy Office — Vehicle Exchange Colorado (VXC)</a></li>
+        <li><a href="https://evco.colorado.gov/whats-new/budget-breakdowns-how-much-is-the-colorado-ev-tax-credit-worth" target="_blank" rel="noopener noreferrer">EV CO — 2026 credit reduction explainer</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING CTA -->
+<section class="closing-cta">
+  <div class="container">
+    <div class="closing-cta-inner">
+      <h2>Don't let the <span class="accent">June 30 deadline</span> pass you by.</h2>
+      <p>If you've been on the fence about installing an EV charger, the federal credit is your tiebreaker. Get a free Aurora quote that factors in every rebate you actually qualify for.</p>
+      <a href="#quote" class="btn-big primary">
+        Get my free quote
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="brand">
+          <div class="brand-mark">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <div class="brand-name" style="color: white;">Aurora EV <span>Install</span></div>
+        </a>
+        <p style="margin-top: 12px;">Licensed Aurora electricians for EV charger installation. Permits handled. Xcel rebate guidance. Free quotes via form, no spam.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Services</h5>
+        <a href="/#">Tesla Wall Connector</a>
+        <a href="/#">Level 2 Installation</a>
+        <a href="/#">Panel Upgrades</a>
+        <a href="/#">NEMA 14-50 Outlets</a>
+        <a href="/#">Commercial / Multifamily</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <a href="/cost.html">Cost Guide</a>
+        <a href="/#">Permit Guide</a>
+        <a href="/rebates.html">Rebate Guide</a>
+        <a href="/#">FAQs</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Service Area</h5>
+        <a href="/#">Southlands</a>
+        <a href="/#">Saddle Rock</a>
+        <a href="/#">Painted Prairie</a>
+        <a href="/#">Green Valley Ranch</a>
+        <a href="/#">Tower Triangle</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2026 Aurora EV Install. Licensed electrical contractor. Not affiliated with Tesla, Xcel Energy, or the City of Aurora.</div>
+      <div class="sources">Verified 2026-05-19 · NEC 2023 · §30C through 2026-06-30</div>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE QUOTE BAR -->
+<div class="sticky-mobile-bar">
+  <a href="#quote">Get Free Quote →</a>
+</div>
+
+<!-- COUNTDOWN + IN-PAGE NAV ACTIVE STATE -->
+<script>
+(function() {
+  // Federal §30C deadline: June 30, 2026, end of day Mountain Time
+  var deadline = new Date('2026-06-30T23:59:59-06:00');
+
+  function updateCountdown() {
+    var now = new Date();
+    var ms = deadline - now;
+    var numEl = document.getElementById('countdown-num');
+    var unitEl = document.querySelector('.countdown-unit');
+    var contextEl = document.getElementById('countdown-context');
+    if (!numEl) return;
+
+    if (ms <= 0) {
+      numEl.textContent = '0';
+      unitEl.textContent = 'days';
+      contextEl.innerHTML = '<strong>The §30C credit has expired.</strong> Installations after June 30, 2026 do not qualify.';
+      return;
+    }
+    var days = Math.ceil(ms / (1000 * 60 * 60 * 24));
+    numEl.textContent = days;
+    unitEl.textContent = days === 1 ? 'day' : 'days';
+    var weeks = Math.floor(days / 7);
+    var extra = days % 7;
+    if (weeks > 0) {
+      var weeksText = '~' + weeks + ' week' + (weeks !== 1 ? 's' : '');
+      if (extra > 0) {
+        weeksText += ' ' + extra + ' day' + (extra !== 1 ? 's' : '');
+      }
+      contextEl.innerHTML = '<strong>' + weeksText + ' · deadline June 30, 2026</strong> (per P.L. 119-21). Charger must be installed and operational by then.';
+    }
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 60 * 60 * 1000);
+
+  // In-page nav active state on scroll
+  var sections = document.querySelectorAll('section[id]');
+  var navLinks = document.querySelectorAll('.in-page-nav a');
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var id = entry.target.id;
+          navLinks.forEach(function(link) {
+            var href = link.getAttribute('href');
+            link.classList.toggle('active', href === '#' + id);
+          });
+        }
+      });
+    }, { rootMargin: '-130px 0px -55% 0px' });
+    sections.forEach(function(section) { observer.observe(section); });
+  }
+})();
+</script>
+</body>
+</html>
