@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EV Charger Installation in Aurora, CO — Aurora EV Install</title>
+<meta name="description" content="Licensed Aurora electricians for Tesla and Level 2 EV charger installation. Aurora permits handled, Xcel rebate guidance, same-day callback. Free quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0A1F3D;
+    --navy-deep: #051528;
+    --navy-soft: #15294A;
+    --charcoal: #1A2238;
+    --ink: #1A2238;
+    --ink-soft: #3B4259;
+    --ink-mute: #6B7787;
+    --line: #E2E8F0;
+    --line-soft: #EEF2F7;
+    --paper: #FAFBFC;
+    --paper-cool: #F4F6FA;
+    --paper-cooler: #EEF2F7;
+
+    --electric: #0066FF;
+    --electric-deep: #0052CC;
+    --electric-soft: #E6F0FF;
+    --cyan: #00B7E0;
+    --cyan-soft: #E0F6FC;
+    --green: #10B981;
+    --green-soft: #E6F7F0;
+    --amber: #F59E0B;
+    --amber-soft: #FEF3C7;
+    --amber-deep: #B45309;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.55;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+  .container-narrow {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+  @media (max-width: 720px) {
+    .container, .container-narrow { padding: 0 20px; }
+  }
+
+  /* TOP NAV */
+  header.topnav {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+    z-index: 100;
+  }
+  .nav-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 14px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--navy);
+  }
+  .brand-mark {
+    width: 32px;
+    height: 32px;
+    background: var(--navy);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cyan);
+    position: relative;
+  }
+  .brand-mark::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 6px;
+    box-shadow: 0 0 0 1px rgba(0, 183, 224, 0.2), 0 4px 12px rgba(0, 102, 255, 0.15);
+  }
+  .brand-name {
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.01em;
+  }
+  .brand-name span {
+    color: var(--electric);
+    font-weight: 500;
+  }
+  nav.main-nav {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+  }
+  nav.main-nav a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.15s;
+  }
+  nav.main-nav a:hover { color: var(--electric); }
+  .nav-cta {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .phone-link {
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .phone-link svg { color: var(--electric); }
+  .btn-primary {
+    background: var(--electric);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.2s;
+    box-shadow: 0 1px 2px rgba(10, 31, 61, 0.1), 0 0 0 1px rgba(0, 102, 255, 0.1);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .btn-primary:hover {
+    background: var(--electric-deep);
+    box-shadow: 0 4px 12px rgba(0, 102, 255, 0.25), 0 0 0 1px rgba(0, 102, 255, 0.2);
+    transform: translateY(-1px);
+  }
+  @media (max-width: 880px) {
+    nav.main-nav { display: none; }
+    .nav-inner { padding: 12px 20px; }
+    .phone-link span { display: none; }
+  }
+
+  /* HERO */
+  .hero {
+    background: var(--paper);
+    padding: 70px 0 60px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(0, 183, 224, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    gap: 64px;
+    align-items: start;
+    position: relative;
+    z-index: 1;
+  }
+  .verified-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: var(--green-soft);
+    color: var(--green);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 9px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 18px;
+  }
+  .hero h1 {
+    font-size: clamp(40px, 5.5vw, 64px);
+    font-weight: 700;
+    line-height: 1.02;
+    letter-spacing: -0.025em;
+    color: var(--navy);
+    margin-bottom: 22px;
+  }
+  .hero h1 .accent {
+    color: var(--electric);
+  }
+  .hero-dek {
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--ink-soft);
+    margin-bottom: 28px;
+    max-width: 560px;
+  }
+  .hero-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 28px 0;
+  }
+  .hero-bullets li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 7px 0;
+    font-size: 15px;
+    color: var(--ink);
+    font-weight: 500;
+  }
+  .hero-bullets li svg {
+    color: var(--electric);
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .hero-trust-row {
+    display: flex;
+    gap: 28px;
+    margin-top: 36px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+    flex-wrap: wrap;
+  }
+  .hero-trust-row .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--ink-soft);
+    font-weight: 500;
+  }
+  .hero-trust-row .trust-item svg {
+    color: var(--electric);
+    flex-shrink: 0;
+  }
+
+  /* HERO QUOTE FORM (sticky) */
+  .quote-card {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 28px 28px 24px;
+    box-shadow: 0 4px 24px rgba(10, 31, 61, 0.08), 0 1px 3px rgba(10, 31, 61, 0.04);
+    position: sticky;
+    top: 90px;
+  }
+  .quote-card-header {
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 16px;
+    margin-bottom: 18px;
+  }
+  .quote-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--navy);
+    letter-spacing: -0.01em;
+    margin-bottom: 6px;
+  }
+  .quote-card .tag {
+    font-size: 13px;
+    color: var(--ink-mute);
+  }
+  .form-group {
+    margin-bottom: 12px;
+  }
+  .form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--ink-soft);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    color: var(--ink);
+    background: white;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: var(--electric);
+    box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.1);
+  }
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .btn-form {
+    width: 100%;
+    background: var(--electric);
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.2s;
+    box-shadow: 0 4px 14px rgba(0, 102, 255, 0.25), 0 0 0 1px rgba(0, 102, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .btn-form:hover {
+    background: var(--electric-deep);
+    box-shadow: 0 6px 18px rgba(0, 102, 255, 0.35), 0 0 0 1px rgba(0, 102, 255, 0.2);
+    transform: translateY(-1px);
+  }
+  .form-trust {
+    text-align: center;
+    margin-top: 14px;
+    font-size: 12px;
+    color: var(--ink-mute);
+  }
+  .form-trust strong { color: var(--navy); }
+  @media (max-width: 880px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 36px; }
+    .quote-card { position: static; }
+    .hero { padding: 40px 0 30px; }
+  }
+
+  /* TRUST STRIP */
+  .trust-strip {
+    background: var(--navy);
+    padding: 36px 0;
+  }
+  .trust-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 36px;
+  }
+  .trust-stat {
+    text-align: center;
+    color: white;
+  }
+  .trust-stat .num {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--cyan);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+  }
+  .trust-stat .label {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    line-height: 1.4;
+  }
+  @media (max-width: 720px) {
+    .trust-grid { grid-template-columns: repeat(2, 1fr); gap: 28px; }
+  }
+
+  /* SECTIONS */
+  section {
+    padding: 80px 0;
+  }
+  section.tight { padding: 60px 0; }
+  section.gray { background: var(--paper-cool); }
+  .section-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--electric);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 14px;
+  }
+  .section-title {
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--navy);
+    margin-bottom: 16px;
+  }
+  .section-title .accent { color: var(--electric); }
+  .section-intro {
+    font-size: 18px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    max-width: 760px;
+  }
+  .section-head {
+    margin-bottom: 48px;
+  }
+  .section-head.centered {
+    text-align: center;
+  }
+  .section-head.centered .section-intro {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* WHAT THIS SITE DOES */
+  .intro-block {
+    background: white;
+    border-radius: 12px;
+    padding: 40px 52px;
+    border: 1px solid var(--line);
+    box-shadow: 0 1px 3px rgba(10, 31, 61, 0.04);
+    margin-top: 20px;
+  }
+  .intro-block p {
+    font-size: 18px;
+    line-height: 1.65;
+    color: var(--ink);
+    margin: 0;
+  }
+  .intro-block p strong {
+    color: var(--navy);
+    font-weight: 600;
+  }
+  @media (max-width: 720px) {
+    .intro-block { padding: 30px 24px; }
+    .intro-block p { font-size: 16px; }
+  }
+
+  /* HOW IT WORKS — 3 STEPS */
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 16px;
+  }
+  .step-card {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 36px 32px;
+    position: relative;
+    transition: all 0.2s;
+  }
+  .step-card:hover {
+    border-color: var(--electric-soft);
+    box-shadow: 0 8px 24px rgba(10, 31, 61, 0.06);
+    transform: translateY(-2px);
+  }
+  .step-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--electric);
+    margin-bottom: 20px;
+    letter-spacing: 0.06em;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .step-num::before {
+    content: '';
+    width: 32px;
+    height: 32px;
+    background: var(--electric-soft);
+    color: var(--electric);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .step-card:nth-child(1) .step-num::before { content: '1'; }
+  .step-card:nth-child(2) .step-num::before { content: '2'; }
+  .step-card:nth-child(3) .step-num::before { content: '3'; }
+  .step-card h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+  }
+  .step-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+  .step-card p strong { color: var(--navy); font-weight: 600; }
+  @media (max-width: 880px) {
+    .steps-grid { grid-template-columns: 1fr; gap: 16px; }
+  }
+
+  /* RESOURCES CARDS */
+  .resource-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 16px;
+  }
+  .resource-card {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 28px 30px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s;
+  }
+  .resource-card:hover {
+    border-color: var(--electric);
+    box-shadow: 0 8px 24px rgba(10, 31, 61, 0.08);
+    transform: translateY(-2px);
+  }
+  .resource-card:hover .resource-arrow { transform: translateX(3px); }
+  .resource-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: var(--electric-soft);
+    color: var(--electric);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .resource-content {
+    flex: 1;
+  }
+  .resource-content h4 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+    letter-spacing: -0.01em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .resource-arrow {
+    color: var(--electric);
+    transition: transform 0.2s;
+  }
+  .resource-content p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+  @media (max-width: 720px) {
+    .resource-grid { grid-template-columns: 1fr; }
+  }
+
+  /* SERVICES BLOCK */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 16px;
+  }
+  .service-card {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.2s;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+  }
+  .service-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(10, 31, 61, 0.1);
+    border-color: var(--electric);
+  }
+  .service-visual {
+    height: 180px;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-soft) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cyan);
+    position: relative;
+    overflow: hidden;
+  }
+  .service-visual::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(0, 183, 224, 0.15) 0%, transparent 60%);
+  }
+  .service-visual svg {
+    width: 56px;
+    height: 56px;
+    position: relative;
+    z-index: 1;
+  }
+  .service-card.tesla .service-visual { background: linear-gradient(135deg, #051528 0%, #15294A 100%); }
+  .service-card.panel .service-visual { background: linear-gradient(135deg, #0A1F3D 0%, #1A3354 100%); }
+  .service-card.commercial .service-visual { background: linear-gradient(135deg, #122947 0%, #1F3A5F 100%); }
+  .service-body {
+    padding: 28px 28px 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .service-body .service-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--electric);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+  }
+  .service-body h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.2;
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+  }
+  .service-body p {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    margin-bottom: 20px;
+    flex: 1;
+  }
+  .service-link {
+    color: var(--electric);
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: auto;
+  }
+  @media (max-width: 880px) {
+    .services-grid { grid-template-columns: 1fr; }
+  }
+
+  /* TRUST POINTS / WHY US */
+  .trust-points-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-top: 12px;
+  }
+  .trust-point {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+  }
+  .trust-point-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: var(--electric);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 102, 255, 0.25);
+  }
+  .trust-point h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+    letter-spacing: -0.005em;
+  }
+  .trust-point p {
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+  .trust-point p strong { color: var(--navy); font-weight: 600; }
+  @media (max-width: 720px) {
+    .trust-points-grid { grid-template-columns: 1fr; }
+  }
+
+  /* NEIGHBORHOODS */
+  .neighborhoods-block {
+    background: white;
+    border-radius: 12px;
+    padding: 48px 52px;
+    border: 1px solid var(--line);
+    margin-top: 24px;
+  }
+  .neighborhoods-block h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+  }
+  .neighborhoods-block .city-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-mute);
+    margin-bottom: 24px;
+    letter-spacing: 0.04em;
+  }
+  .neighborhoods-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  .neighborhood {
+    padding: 12px 16px;
+    background: var(--paper-cool);
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.15s;
+  }
+  .neighborhood:hover {
+    background: var(--electric-soft);
+    color: var(--electric);
+  }
+  .neighborhood svg {
+    color: var(--electric);
+    flex-shrink: 0;
+  }
+  @media (max-width: 720px) {
+    .neighborhoods-block { padding: 32px 24px; }
+    .neighborhoods-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  /* URGENCY CALLOUT */
+  .urgency-callout {
+    background: linear-gradient(to right, var(--amber-soft), white);
+    border: 1px solid var(--amber);
+    border-left: 4px solid var(--amber);
+    border-radius: 8px;
+    padding: 22px 26px;
+    margin: 30px 0;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+  }
+  .urgency-callout .icon-box {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: var(--amber);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .urgency-callout h4 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--amber-deep);
+    margin-bottom: 4px;
+    letter-spacing: -0.01em;
+  }
+  .urgency-callout p {
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--ink);
+    margin: 0;
+  }
+  .urgency-callout p strong { color: var(--amber-deep); }
+
+  /* MID-PAGE QUOTE FORM */
+  .mid-form-section {
+    background: var(--navy);
+    padding: 80px 0;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  .mid-form-section::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(0, 183, 224, 0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .mid-form-section::after {
+    content: '';
+    position: absolute;
+    bottom: -150px;
+    left: -100px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(0, 102, 255, 0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .mid-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  .mid-form-left h2 {
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    color: white;
+  }
+  .mid-form-left h2 .accent { color: var(--cyan); }
+  .mid-form-left p {
+    font-size: 17px;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 24px;
+  }
+  .mid-form-bullets {
+    list-style: none;
+    padding: 0;
+  }
+  .mid-form-bullets li {
+    display: flex;
+    gap: 10px;
+    padding: 8px 0;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+  }
+  .mid-form-bullets li svg {
+    color: var(--cyan);
+    flex-shrink: 0;
+  }
+  .mid-form-card {
+    background: white;
+    border-radius: 10px;
+    padding: 32px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 183, 224, 0.2);
+    color: var(--ink);
+  }
+  .mid-form-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+    letter-spacing: -0.01em;
+  }
+  .mid-form-card .tag {
+    font-size: 13px;
+    color: var(--ink-mute);
+    margin-bottom: 22px;
+  }
+  @media (max-width: 880px) {
+    .mid-form-grid { grid-template-columns: 1fr; gap: 36px; }
+  }
+
+  /* FAQ */
+  .faq-list {
+    margin-top: 12px;
+  }
+  details.faq-item {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: all 0.15s;
+  }
+  details.faq-item:hover {
+    border-color: var(--electric-soft);
+  }
+  details.faq-item[open] {
+    border-color: var(--electric);
+    box-shadow: 0 4px 16px rgba(10, 31, 61, 0.06);
+  }
+  details.faq-item summary {
+    padding: 20px 26px;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    font-weight: 600;
+    color: var(--navy);
+    font-size: 16px;
+    letter-spacing: -0.005em;
+  }
+  details.faq-item summary::-webkit-details-marker { display: none; }
+  details.faq-item summary::after {
+    content: '+';
+    color: var(--electric);
+    font-size: 22px;
+    font-weight: 300;
+    flex-shrink: 0;
+    transition: transform 0.2s;
+  }
+  details.faq-item[open] summary::after {
+    content: '−';
+  }
+  details.faq-item .faq-body {
+    padding: 0 26px 22px;
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+  }
+  details.faq-item .faq-body p { margin-bottom: 10px; }
+  details.faq-item .faq-body p:last-child { margin-bottom: 0; }
+  details.faq-item .faq-body strong { color: var(--navy); }
+  details.faq-item .faq-body a { color: var(--electric); text-decoration: none; }
+  details.faq-item .faq-body a:hover { text-decoration: underline; }
+
+  /* CLOSING CTA */
+  .closing-cta {
+    background: var(--navy);
+    color: white;
+    padding: 90px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .closing-cta::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(0, 102, 255, 0.15) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .closing-cta-inner { position: relative; z-index: 1; }
+  .closing-cta h2 {
+    font-size: clamp(32px, 4.5vw, 46px);
+    font-weight: 700;
+    color: white;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+  .closing-cta h2 .accent { color: var(--cyan); }
+  .closing-cta p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 580px;
+    margin: 0 auto 36px;
+    line-height: 1.55;
+  }
+  .closing-cta-buttons {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .btn-big {
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s;
+  }
+  .btn-big.primary {
+    background: var(--electric);
+    color: white;
+    box-shadow: 0 8px 24px rgba(0, 102, 255, 0.4), 0 0 0 1px rgba(0, 183, 224, 0.3);
+  }
+  .btn-big.primary:hover {
+    background: var(--electric-deep);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(0, 102, 255, 0.5), 0 0 0 1px rgba(0, 183, 224, 0.4);
+  }
+  .btn-big.secondary {
+    background: transparent;
+    color: white;
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+  }
+  .btn-big.secondary:hover {
+    border-color: var(--cyan);
+    background: rgba(0, 183, 224, 0.1);
+  }
+
+  /* FOOTER */
+  footer.site-footer {
+    background: var(--navy-deep);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 56px 0 32px;
+    font-size: 14px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 40px;
+  }
+  .footer-brand .brand-name {
+    color: white;
+    margin-bottom: 12px;
+  }
+  .footer-brand p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+    line-height: 1.6;
+    max-width: 320px;
+  }
+  .footer-col h5 {
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .footer-col a {
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 13px;
+    padding: 4px 0;
+    transition: color 0.15s;
+  }
+  .footer-col a:hover { color: var(--cyan); }
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .footer-bottom .sources {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+  }
+  @media (max-width: 720px) {
+    .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+    .footer-bottom { flex-direction: column; }
+  }
+
+  /* STICKY MOBILE QUOTE BAR */
+  .sticky-mobile-bar {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--navy);
+    padding: 12px 16px;
+    z-index: 90;
+    box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.15);
+    gap: 10px;
+  }
+  .sticky-mobile-bar a {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .sticky-mobile-bar .call-btn {
+    background: transparent;
+    color: white;
+    border: 1.5px solid var(--cyan);
+  }
+  .sticky-mobile-bar .quote-btn {
+    background: var(--electric);
+    color: white;
+  }
+  @media (max-width: 720px) {
+    .sticky-mobile-bar { display: flex; }
+    body { padding-bottom: 70px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP NAV -->
+<header class="topnav">
+  <div class="nav-inner">
+    <a href="/" class="brand">
+      <div class="brand-mark">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      </div>
+      <div class="brand-name">Aurora EV <span>Install</span></div>
+    </a>
+    <nav class="main-nav">
+      <a href="#services">Tesla &amp; Level 2</a>
+      <a href="cost.html">Cost</a>
+      <a href="#">Permits</a>
+      <a href="#">Rebates</a>
+      <a href="#">Panel Upgrades</a>
+      <a href="#">Commercial</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:+1XXXXXXXXXX" class="phone-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>(XXX) XXX-XXXX</span>
+      </a>
+      <a href="#quote" class="btn-primary">Get Free Quote</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="verified-pill">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Licensed electricians · Aurora permits handled
+        </div>
+        <h1>EV Charger Installation <span class="accent">in Aurora, CO</span></h1>
+        <p class="hero-dek">Tesla Wall Connector, Level 2, NEMA 14-50, panel upgrades — installed by licensed Aurora electricians who handle every permit, every inspection, and every rebate detail for you.</p>
+
+        <ul class="hero-bullets">
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Aurora City Code §22-213 permits pulled by your electrician</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Inspected to the 2023 NEC (the code Aurora actually uses)</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Xcel rebate enrollment guidance &amp; federal §30C eligibility check</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Free quote · same-day callback during business hours</span>
+          </li>
+        </ul>
+
+        <div class="hero-trust-row">
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Licensed &amp; insured
+          </div>
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Same-day callback
+          </div>
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            All chargers supported
+          </div>
+        </div>
+      </div>
+
+      <!-- HERO QUOTE FORM -->
+      <div class="quote-card" id="quote">
+        <div class="quote-card-header">
+          <h3>Free Aurora EV charger quote</h3>
+          <p class="tag">Licensed electrician. Permits handled. Same-day callback.</p>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First name</label>
+            <input type="text" id="fname" placeholder="Jordan">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" placeholder="(720) 555-0142">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="zip">Aurora ZIP code</label>
+          <input type="text" id="zip" placeholder="80016" maxlength="5">
+        </div>
+
+        <div class="form-group">
+          <label for="charger">Which charger?</label>
+          <select id="charger">
+            <option>Tesla Wall Connector</option>
+            <option>ChargePoint Home Flex</option>
+            <option>Other Level 2 charger</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="panel">Electrical panel (if known)</label>
+          <select id="panel">
+            <option>200-amp (newer home)</option>
+            <option>100-amp (older home)</option>
+            <option>Not sure</option>
+          </select>
+        </div>
+
+        <button class="btn-form">
+          Get my free quote
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+        <div class="form-trust"><strong>No spam.</strong> Goes only to your local Aurora electrician.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-stat">
+        <div class="num">32.4%</div>
+        <div class="label">Of Colorado new car sales were EVs in Q3 2025<br>(Highest of any state, ever)</div>
+      </div>
+      <div class="trust-stat">
+        <div class="num">414K</div>
+        <div class="label">Aurora residents we serve<br>(3rd largest city in Colorado)</div>
+      </div>
+      <div class="trust-stat">
+        <div class="num">2023 NEC</div>
+        <div class="label">Code Aurora inspects to<br>(Effective Aug 1, 2023)</div>
+      </div>
+      <div class="trust-stat">
+        <div class="num">Jun 2026</div>
+        <div class="label">Federal §30C credit deadline<br>(Install before, or lose it)</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WHAT THIS SITE DOES -->
+<section class="tight">
+  <div class="container-narrow">
+    <div class="section-head">
+      <div class="section-eyebrow">What this site does</div>
+      <h2 class="section-title">A straight-shooting <span class="accent">EV charger install referral</span> for Aurora</h2>
+    </div>
+
+    <div class="intro-block">
+      <p>Aurora EV Install connects homeowners in Aurora, Colorado with a <strong>licensed local electrician</strong> for Tesla Wall Connector, Level 2, and NEMA 14-50 installations. We're not a national lead aggregator — every call and quote request goes directly to your local Aurora electrician, who handles the Aurora Building Division permit, the install, and the inspection. You pay your electrician directly; we charge nothing for the referral.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW QUOTES WORK -->
+<section class="gray">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">How quotes work</div>
+      <h2 class="section-title">From form to <span class="accent">installed charger</span> in three steps</h2>
+      <p class="section-intro">No haggling. No hidden fees. No upselling you on services you don't need. Here's the actual process from request to energized charger.</p>
+    </div>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">Step</div>
+        <h4>Tell us about your home</h4>
+        <p>A 60-second form: your Aurora ZIP, which charger you want, your home's panel size (or "not sure"), and your garage type. Five fields, no spam. We don't share your info with anyone except your local electrician.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-num">Step</div>
+        <h4>Same-day ballpark + site visit</h4>
+        <p>A licensed Aurora electrician calls within business hours with a <strong>site-unseen ballpark</strong> based on your details. If the numbers make sense, they schedule a free in-home site visit to confirm the exact quote — typically within 2-3 days.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-num">Step</div>
+        <h4>Permit, install, inspection</h4>
+        <p>Your electrician pulls the Aurora permit under City Code §22-213, runs the dedicated 240V circuit, mounts and energizes the charger, and schedules the final electrical inspection. Most simple installs take <strong>4-6 hours on one day</strong>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- URGENCY -->
+<section class="tight">
+  <div class="container">
+    <div class="urgency-callout">
+      <div class="icon-box">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      </div>
+      <div>
+        <h4>The federal credit ends June 30, 2026</h4>
+        <p>The Section 30C home EV charger credit was <strong>shortened from 2032 to June 30, 2026</strong> by Public Law 119-21 (signed July 4, 2025). To claim 30% of cost up to $1,000 per port, your charger must be installed and operational by that date — and your home must be in an eligible census tract. <a href="https://www.irs.gov/pub/irs-prior/i8911--2025.pdf" target="_blank" rel="noopener noreferrer" style="color: var(--amber-deep); text-decoration: underline; font-weight: 600;">Source: IRS Form 8911 (2025)</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">What we install</div>
+      <h2 class="section-title">Every kind of EV charging install <span class="accent">Aurora homes need</span></h2>
+      <p class="section-intro">From a single Tesla Wall Connector in an attached garage to a full panel upgrade for a multi-EV household, our partner electricians cover the full range. All work permitted, inspected, and code-compliant.</p>
+    </div>
+
+    <div class="services-grid">
+      <a href="#" class="service-card tesla">
+        <div class="service-visual">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <div class="service-body">
+          <div class="service-tag">Most requested</div>
+          <h4>Tesla Wall Connector &amp; Level 2 Installation</h4>
+          <p>Tesla Gen 3 Wall Connector, ChargePoint Home Flex, Wallbox Pulsar Plus, Grizzl-E, and all other Level 2 chargers. Hardwired or NEMA 14-50 plug-in. We handle the full install including dedicated 240V circuit, breaker, conduit, and final inspection.</p>
+          <span class="service-link">
+            Learn more
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <a href="#" class="service-card panel">
+        <div class="service-visual">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="2" width="18" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="16" y2="14"/><line x1="8" y1="18" x2="16" y2="18"/></svg>
+        </div>
+        <div class="service-body">
+          <div class="service-tag">When you need it</div>
+          <h4>Electrical Panel Upgrades</h4>
+          <p>About 40% of Aurora homes need some panel work to safely add an EV charger. We handle sub-panel installs, panel replacements, and full 100A-to-200A service upgrades with Xcel utility coordination. Future-proofs your home for heat pumps, second EVs, and more.</p>
+          <span class="service-link">
+            Learn more
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <a href="#" class="service-card commercial">
+        <div class="service-visual">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <div class="service-body">
+          <div class="service-tag">Higher-ticket</div>
+          <h4>Commercial &amp; Multifamily EV Charging</h4>
+          <p>Aurora workplaces, apartment complexes, HOAs, retail centers, and office parks. Networked chargers, load management, sub-metered resident billing, ADA compliance, and permitting handled. Federal §30C commercial credit up to $100,000 per port (if you qualify).</p>
+          <span class="service-link">
+            Learn more
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- RESOURCES (links to deeper pages) -->
+<section class="gray">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Before you commit</div>
+      <h2 class="section-title">What every Aurora homeowner <span class="accent">should know first</span></h2>
+      <p class="section-intro">We've sourced the actual numbers — permits, code, rebates, costs — from the City of Aurora, IRS, Xcel Energy, and industry installer data. No guesses. Read up before you commit to anything.</p>
+    </div>
+
+    <div class="resource-grid">
+      <a href="cost.html" class="resource-card">
+        <div class="resource-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <div class="resource-content">
+          <h4>
+            EV Charger Installation Cost in Aurora
+            <svg class="resource-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </h4>
+          <p>Verified Colorado average ($2,398), the four cost tiers, six variables that move your number, and two worked examples with current incentives applied. Sources cited inline.</p>
+        </div>
+      </a>
+
+      <a href="#" class="resource-card">
+        <div class="resource-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+        </div>
+        <div class="resource-content">
+          <h4>
+            Aurora Permits &amp; Inspection Guide
+            <svg class="resource-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </h4>
+          <p>The Aurora Building Division process step by step. Why a licensed electrician must pull the permit (City Code §22-213), the 2023 NEC requirements, and how to schedule your final inspection.</p>
+        </div>
+      </a>
+
+      <a href="#" class="resource-card">
+        <div class="resource-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="resource-content">
+          <h4>
+            Xcel &amp; Colorado Rebate Guide
+            <svg class="resource-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </h4>
+          <p>The federal §30C credit deadline (June 30, 2026), the Xcel Home Wiring Rebate (and the Optimize Your Charge enrollment requirement), and how to actually stack them. Updated quarterly.</p>
+        </div>
+      </a>
+
+      <a href="#" class="resource-card">
+        <div class="resource-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="2" width="18" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="16" y2="14"/><line x1="8" y1="18" x2="16" y2="18"/></svg>
+        </div>
+        <div class="resource-content">
+          <h4>
+            Do I Need a Panel Upgrade?
+            <svg class="resource-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </h4>
+          <p>About 60% of homes don't. About 40% do. How to read your panel label, what triggers an upgrade, and the four tiers of electrical work ($500 to $5,000+) and which one your home likely needs.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US / TRUST POINTS -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Why Aurora homeowners choose us</div>
+      <h2 class="section-title">Built for <span class="accent">Aurora specifically</span> — not a national directory</h2>
+    </div>
+
+    <div class="trust-points-grid">
+      <div class="trust-point">
+        <div class="trust-point-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <h4>Licensed Aurora electricians only</h4>
+          <p>Every install is performed by a Colorado-licensed electrical contractor familiar with the Aurora Building Division process. <strong>City Code §22-213 requires licensed electricians</strong> to pull EV charger permits — we don't connect you with anyone who isn't.</p>
+        </div>
+      </div>
+
+      <div class="trust-point">
+        <div class="trust-point-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <div>
+          <h4>Permits + inspection handled for you</h4>
+          <p>Aurora requires an electrical permit and a final inspection for every EV charger install. Your electrician pulls the permit, submits the plans, and schedules the inspection with the Aurora Building Division. <strong>You never have to call 303.739.7420 yourself.</strong></p>
+        </div>
+      </div>
+
+      <div class="trust-point">
+        <div class="trust-point-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <div>
+          <h4>Honest about what your home needs</h4>
+          <p>If your panel is fine and you only need a Tier 1 circuit add ($500–$1,500), your electrician will tell you that. If you need a full service upgrade, they'll explain why — with a load calculation, not a sales pitch. <strong>No upselling.</strong></p>
+        </div>
+      </div>
+
+      <div class="trust-point">
+        <div class="trust-point-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <div>
+          <h4>Rebate guidance baked in</h4>
+          <p>Your electrician will walk you through which Xcel rebate you qualify for, whether you need to enroll in Optimize Your Charge first (you do), and whether your address is in an eligible census tract for the federal §30C credit. <strong>You shouldn't have to figure that out alone.</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MID-PAGE QUOTE FORM -->
+<section class="mid-form-section" id="midquote">
+  <div class="container">
+    <div class="mid-form-grid">
+      <div class="mid-form-left">
+        <div class="section-eyebrow" style="color: var(--cyan);">Ready when you are</div>
+        <h2>Tell us about <span class="accent">your Aurora home</span> — get a same-day quote</h2>
+        <p>A licensed Aurora electrician will call you back within business hours with a site-unseen ballpark. If the numbers make sense, they'll schedule a free in-home site visit to confirm the exact quote.</p>
+        <ul class="mid-form-bullets">
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Licensed Aurora electrician, not a lead aggregator</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Permit pulled and inspection scheduled for you</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Guidance on Xcel rebate enrollment and federal §30C eligibility</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Same-day callback during business hours</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mid-form-card">
+        <h3>Tell us about your home</h3>
+        <p class="tag">Takes 60 seconds. Goes only to your local Aurora electrician.</p>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname2">First name</label>
+            <input type="text" id="fname2" placeholder="Jordan">
+          </div>
+          <div class="form-group">
+            <label for="phone2">Phone</label>
+            <input type="tel" id="phone2" placeholder="(720) 555-0142">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="zip2">Aurora ZIP</label>
+            <input type="text" id="zip2" placeholder="80016">
+          </div>
+          <div class="form-group">
+            <label for="year">Home year built</label>
+            <input type="text" id="year" placeholder="2015">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="charger2">Which charger?</label>
+          <select id="charger2">
+            <option>Tesla Wall Connector</option>
+            <option>ChargePoint Home Flex</option>
+            <option>Other Level 2</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="garage">Garage type</label>
+          <select id="garage">
+            <option>Attached garage</option>
+            <option>Detached garage</option>
+            <option>Carport / driveway</option>
+          </select>
+        </div>
+
+        <button class="btn-form">
+          Get my free quote
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+        <div class="form-trust">By submitting, you'll get one callback. <strong>No drip emails, no spam.</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEIGHBORHOODS -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Service area</div>
+      <h2 class="section-title">Serving every <span class="accent">Aurora neighborhood</span></h2>
+      <p class="section-intro">From the older central Aurora blocks to the newer eastern subdivisions, our electricians install across all of Aurora — Arapahoe, Adams, and Douglas counties.</p>
+    </div>
+
+    <div class="neighborhoods-block">
+      <h3>Aurora neighborhoods we serve</h3>
+      <p class="city-tag">All Aurora ZIPs: 80010–80019, 80040–80047, 80045, 80247</p>
+      <div class="neighborhoods-grid">
+        <div class="neighborhood"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Southlands</div>
+        <div class="neighborhood"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Saddle Rock</div>
+        <div class="neighborhood"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Painted Prairie</div>
+        <div class="neighborhood"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Tower Triangle</div>
+        <div class="neighborhood"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Green Valley Ranch</div>
+        <div class="neighborhood"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Hoffman Heights</div>
+        <div class="neighborhood"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Seven Hills</div>
+        <div class="neighborhood"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Murphy Creek</div>
+        <div class="neighborhood"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Heather Gardens</div>
+        <div class="neighborhood"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Tollgate</div>
+        <div class="neighborhood"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Quincy Highlands</div>
+        <div class="neighborhood"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Cherry Creek Vista</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="gray">
+  <div class="container-narrow">
+    <div class="section-head">
+      <div class="section-eyebrow">Common questions</div>
+      <h2 class="section-title">Quick answers <span class="accent">before you commit</span></h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>Do I really need a permit in Aurora?</summary>
+        <div class="faq-body">
+          <p>Yes. Per <strong>Aurora City Code §22-213</strong>, any electrical work — including EV charger installation — requires an electrical permit pulled by a licensed contractor before work begins. Aurora inspects all EV charger installs to the <strong>2023 National Electrical Code</strong>, which has been in effect since August 1, 2023.</p>
+          <p>Unpermitted work can void homeowner's insurance and cause issues when you sell. Source: <a href="https://aurora.municipal.codes/Code/22-213" target="_blank" rel="noopener noreferrer">Aurora Code of Ordinances §22-213</a>.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>How much does an EV charger install cost in Aurora?</summary>
+        <div class="faq-body">
+          <p>Based on Qmerit's 2025 installer-network data, the <strong>Colorado average is $2,398</strong> with a typical range of $800–$3,000 before equipment. About 60% of Aurora homes only need a simple circuit addition at $500–$1,500. Equipment (Tesla Wall Connector, ChargePoint, etc.) is $300–$700 on top.</p>
+          <p>See our full <a href="cost.html">Aurora EV Charger Cost Guide</a> for the four tiers, six cost variables, and worked examples after incentives.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Is the federal tax credit still available?</summary>
+        <div class="faq-body">
+          <p>Yes, but the deadline was <strong>shortened</strong>. Public Law 119-21 (July 2025) reduced the Section 30C termination date from December 31, 2032 to <strong>June 30, 2026</strong>. To claim the 30% credit (up to $1,000 per port), your charger must be installed and operational by that date.</p>
+          <p>There's also a census tract requirement — your home must be in a low-income community tract or a non-urban tract. Much of urban Aurora may not qualify. We'll help you check before you count on it. <a href="https://www.irs.gov/pub/irs-prior/i8911--2025.pdf" target="_blank" rel="noopener noreferrer">IRS source</a>.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What about the Xcel Energy rebate?</summary>
+        <div class="faq-body">
+          <p>Xcel Energy Colorado offers up to <strong>$500 standard</strong> for Level 2 charger wiring (or up to <strong>$1,300 enhanced</strong> for income-qualified customers). The catch: you must enroll in Xcel's <strong>Optimize Your Charge</strong> program before applying. Funding is limited and first-come, first-served.</p>
+          <p>Your electrician will walk you through the enrollment + application sequence as part of your install.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>How long does the install take?</summary>
+        <div class="faq-body">
+          <p>For most Aurora homes (Tier 1 — simple circuit addition), the install itself takes <strong>4-6 hours on a single day</strong>. Includes permit pull, dedicated 240V circuit run, charger mounting, hardwiring or NEMA 14-50 install, and energizing. The Aurora final electrical inspection is scheduled separately, typically within a few days.</p>
+          <p>If you need a full service upgrade (Tier 4, 100A→200A), expect <strong>2-4 weeks total</strong> due to Xcel utility coordination.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can I install it myself to save money?</summary>
+        <div class="faq-body">
+          <p>No. Aurora City Code §22-213 requires that <strong>electrical permits for EV charger installation be pulled by a licensed electrical contractor</strong>. Homeowners cannot DIY a permitted electrical install in Aurora.</p>
+          <p>Working without a permit is technically possible but a very bad idea: it can void homeowner's insurance, fail safety inspections, cause issues when selling your home, and create real fire risk for chargers that draw 30-50 amps continuous.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING CTA -->
+<section class="closing-cta">
+  <div class="container">
+    <div class="closing-cta-inner">
+      <h2>Get a real Aurora quote <span class="accent">— not a guess.</span></h2>
+      <p>A licensed Aurora electrician will walk through your home's specifics — panel, distance, charger preference, rebate eligibility — and give you an honest number. Same-day callback during business hours.</p>
+      <div class="closing-cta-buttons">
+        <a href="#quote" class="btn-big primary">
+          Get my free quote
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="tel:+1XXXXXXXXXX" class="btn-big secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call (XXX) XXX-XXXX
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="brand">
+          <div class="brand-mark">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <div class="brand-name" style="color: white;">Aurora EV <span>Install</span></div>
+        </a>
+        <p style="margin-top: 12px;">Licensed Aurora electricians for EV charger installation. Permits handled. Xcel rebate guidance. Same-day callback during business hours.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Services</h5>
+        <a href="#">Tesla Wall Connector</a>
+        <a href="#">Level 2 Installation</a>
+        <a href="#">Panel Upgrades</a>
+        <a href="#">NEMA 14-50 Outlets</a>
+        <a href="#">Commercial / Multifamily</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <a href="cost.html">Cost Guide</a>
+        <a href="#">Permit Guide</a>
+        <a href="#">Rebate Guide</a>
+        <a href="#">FAQs</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Service Area</h5>
+        <a href="#">Southlands</a>
+        <a href="#">Saddle Rock</a>
+        <a href="#">Painted Prairie</a>
+        <a href="#">Green Valley Ranch</a>
+        <a href="#">Tower Triangle</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2026 Aurora EV Install. Licensed electrical contractor. Not affiliated with Tesla, Xcel Energy, or the City of Aurora.</div>
+      <div class="sources">Verified 2026-05 · NEC 2023 · §30C effective through 2026-06-30</div>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE QUOTE BAR -->
+<div class="sticky-mobile-bar">
+  <a href="tel:+1XXXXXXXXXX" class="call-btn">Call</a>
+  <a href="#quote" class="quote-btn">Get Free Quote →</a>
+</div>
+
+</body>
+</html>
