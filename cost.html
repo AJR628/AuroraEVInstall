@@ -1210,7 +1210,10 @@
       </div>
 
       <!-- HERO QUOTE FORM -->
-      <div class="quote-card" id="quote">
+      <form class="quote-card" id="quote" name="lead-quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks.html">
+        <input type="hidden" name="form-name" value="lead-quote" />
+        <input type="hidden" name="source" value="cost-page-hero" />
+        <p hidden style="position:absolute;left:-9999px;"><label>Do not fill this out: <input name="bot-field" /></label></p>
         <div class="quote-card-header">
           <h3>Free Aurora EV charger quote</h3>
           <p class="tag">Licensed electrician. Permits handled. Same-day callback.</p>
@@ -1219,22 +1222,22 @@
         <div class="form-row">
           <div class="form-group">
             <label for="fname">First name</label>
-            <input type="text" id="fname" placeholder="Jordan">
+            <input type="text" id="fname" name="first_name" placeholder="Jordan" required>
           </div>
           <div class="form-group">
             <label for="phone">Phone</label>
-            <input type="tel" id="phone" placeholder="(720) 555-0142">
+            <input type="tel" id="phone" name="phone" placeholder="(720) 555-0142" required>
           </div>
         </div>
 
         <div class="form-group">
           <label for="zip">Aurora ZIP code</label>
-          <input type="text" id="zip" placeholder="80016" maxlength="5">
+          <input type="text" id="zip" name="zip" placeholder="80016" maxlength="5" required>
         </div>
 
         <div class="form-group">
           <label for="charger">Which charger?</label>
-          <select id="charger">
+          <select id="charger" name="charger">
             <option>Tesla Wall Connector</option>
             <option>ChargePoint Home Flex</option>
             <option>Other Level 2 charger</option>
@@ -1244,19 +1247,19 @@
 
         <div class="form-group">
           <label for="panel">Electrical panel (if known)</label>
-          <select id="panel">
+          <select id="panel" name="panel">
             <option>200-amp (newer home)</option>
             <option>100-amp (older home)</option>
             <option>Not sure</option>
           </select>
         </div>
 
-        <button class="btn-form">
+        <button class="btn-form" type="submit">
           Get my free quote
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </button>
         <div class="form-trust"><strong>No spam.</strong> Goes only to your local Aurora electrician.</div>
-      </div>
+      </form>
     </div>
   </div>
 </section>
@@ -1562,35 +1565,38 @@
         </ul>
       </div>
 
-      <div class="mid-form-card">
+      <form class="mid-form-card" name="lead-quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks.html">
+        <input type="hidden" name="form-name" value="lead-quote" />
+        <input type="hidden" name="source" value="cost-page-mid" />
+        <p hidden style="position:absolute;left:-9999px;"><label>Do not fill this out: <input name="bot-field" /></label></p>
         <h3>Tell us about your home</h3>
         <p class="tag">Takes 60 seconds. Goes only to your local Aurora electrician.</p>
 
         <div class="form-row">
           <div class="form-group">
             <label for="fname2">First name</label>
-            <input type="text" id="fname2" placeholder="Jordan">
+            <input type="text" id="fname2" name="first_name" placeholder="Jordan" required>
           </div>
           <div class="form-group">
             <label for="phone2">Phone</label>
-            <input type="tel" id="phone2" placeholder="(720) 555-0142">
+            <input type="tel" id="phone2" name="phone" placeholder="(720) 555-0142" required>
           </div>
         </div>
 
         <div class="form-row">
           <div class="form-group">
             <label for="zip2">Aurora ZIP</label>
-            <input type="text" id="zip2" placeholder="80016">
+            <input type="text" id="zip2" name="zip" placeholder="80016" required>
           </div>
           <div class="form-group">
             <label for="year">Home year built</label>
-            <input type="text" id="year" placeholder="2015">
+            <input type="text" id="year" name="home_year" placeholder="2015">
           </div>
         </div>
 
         <div class="form-group">
           <label for="charger2">Which charger?</label>
-          <select id="charger2">
+          <select id="charger2" name="charger">
             <option>Tesla Wall Connector</option>
             <option>ChargePoint Home Flex</option>
             <option>Other Level 2</option>
@@ -1600,19 +1606,19 @@
 
         <div class="form-group">
           <label for="garage">Garage type</label>
-          <select id="garage">
+          <select id="garage" name="garage">
             <option>Attached garage</option>
             <option>Detached garage</option>
             <option>Carport / driveway</option>
           </select>
         </div>
 
-        <button class="btn-form">
+        <button class="btn-form" type="submit">
           Get my free quote
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </button>
         <div class="form-trust">By submitting, you'll get one callback. <strong>No drip emails, no spam.</strong></div>
-      </div>
+      </form>
     </div>
   </div>
 </section>
