@@ -1,0 +1,9 @@
+# Force 301 redirects from .html URLs to extensionless canonical form.
+# The trailing "!" force flag overrides Netlify's default "static file wins" behavior,
+# so the redirect applies even though cost.html / rebates.html / permits.html exist on disk.
+# Source: https://docs.netlify.com/routing/redirects/#shadowing
+
+/index.html    /         301!
+/cost.html     /cost     301!
+/rebates.html  /rebates  301!
+/permits.html  /permits  301!
